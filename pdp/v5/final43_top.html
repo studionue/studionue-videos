@@ -1,0 +1,249 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+#prdDetail .nv{--ink:#262E26;--mute:#6F756B;--line:rgba(38,46,38,.18);--stone:#EFEBE3;--paper:#F7F4EE;font-family:'Noto Sans KR',sans-serif;color:#262E26;max-width:860px;margin:0 auto;word-break:keep-all;-webkit-font-smoothing:antialiased;text-align:left}
+#prdDetail .nv *{box-sizing:border-box}
+#prdDetail .nv p{margin:0}
+#prdDetail .nv h2,#prdDetail .nv h3,#prdDetail .nv h4,#prdDetail .nv h5{display:block;width:auto;border:0;padding:0;text-align:left;float:none}
+#prdDetail .nv .nv-eb{display:inline-block;background:#262E26;color:#fff;font:500 11px/1.25 'Noto Sans KR',sans-serif;letter-spacing:.17em;padding:5px 8px 4px;margin:0}
+#prdDetail .nv .nv-ser{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:-.01em;color:#262E26}
+#prdDetail .nv .nv-mh{padding:56px 0 0}
+#prdDetail .nv .nv-mh .nv-sub{font:500 12px/1 'Noto Sans KR',sans-serif;letter-spacing:.22em;color:#6F756B;margin:0 0 14px}
+#prdDetail .nv .nv-mh h2{font:500 56px/1.02 'Cormorant Garamond',serif;margin:0 0 22px;color:#262E26}
+#prdDetail .nv .nv-lead{font:400 15px/1.85 'Noto Sans KR',sans-serif;color:#3d453d;margin:0 0 22px}
+#prdDetail .nv .nv-chips{display:flex;flex-wrap:wrap;gap:8px}
+#prdDetail .nv .nv-chips span{border:1px solid rgba(38,46,38,.22);font:500 12px/1 'Noto Sans KR',sans-serif;letter-spacing:.05em;padding:8px 11px;background:#fff;color:#262E26}
+#prdDetail .nv .nv-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 0;padding:0 0 30px;border-bottom:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-tabs a{border:1px solid rgba(38,46,38,.35);padding:10px 14px 9px;font:500 11.5px/1.2 'Noto Sans KR',sans-serif;letter-spacing:.12em;color:#262E26;text-decoration:none;background:transparent;white-space:nowrap}
+#prdDetail .nv .nv-tabs a:hover{background:#262E26;color:#fff;border-color:#262E26}
+#prdDetail .nv .nv-media{margin:40px 0 0;background:#EFEBE3;overflow:hidden}
+#prdDetail .nv .nv-media video,#prdDetail .nv .nv-media img{display:block;width:100%;height:auto;margin:0;border:0}
+#prdDetail .nv .nv-sec{padding:96px 0 0}
+#prdDetail .nv .nv-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin:0 0 34px}
+#prdDetail .nv .nv-head h3{font:500 42px/1.08 'Cormorant Garamond',serif;margin:14px 0 0;color:#262E26}
+#prdDetail .nv .nv-head h3 span{display:block;font:500 15px/1.5 'Noto Sans KR',sans-serif;letter-spacing:0;margin-top:10px;color:#3d453d}
+#prdDetail .nv .nv-head p{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-fy{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:48px;border-top:1px solid #262E26}
+#prdDetail .nv .nv-fy div{display:grid;grid-template-columns:44px minmax(0,1fr);padding:17px 0;border-bottom:1px solid rgba(38,46,38,.18);font:400 14.5px/1.7 'Noto Sans KR',sans-serif;color:#3a3f3a}
+#prdDetail .nv .nv-fy i,#prdDetail .nv .nv-fy em{font:italic 400 22px/1.2 'Cormorant Garamond',serif;color:#6F756B}
+#prdDetail .nv .nv-fy b,#prdDetail .nv .nv-fy strong{font-weight:600;color:#262E26}
+#prdDetail .nv .nv-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+#prdDetail .nv .nv-row .nv-media{margin:0}
+#prdDetail .nv .nv-ttl{font:500 40px/1.1 'Cormorant Garamond',serif;margin:14px 0 6px;color:#262E26}
+#prdDetail .nv .nv-kr{font:500 15px/1.5 'Noto Sans KR',sans-serif;margin:0 0 16px;color:#3d453d}
+#prdDetail .nv .nv-txt{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a;margin:0 0 6px}
+#prdDetail .nv .nv-sub3{display:grid;grid-template-columns:72px minmax(0,1fr);gap:0 18px;align-items:baseline;padding:28px 0 22px;border-top:1px solid #262E26;margin-top:56px}
+#prdDetail .nv .nv-head+.nv-sub3{margin-top:0}
+#prdDetail .nv .nv-sub3 .no{font:italic 400 40px/1 'Cormorant Garamond',serif;color:#6F756B}
+#prdDetail .nv .nv-sub3 h4{font:500 26px/1.15 'Cormorant Garamond',serif;margin:0 0 4px;color:#262E26}
+#prdDetail .nv .nv-sub3 h5{font:500 14.5px/1.5 'Noto Sans KR',sans-serif;margin:0 0 10px;color:#262E26}
+#prdDetail .nv .nv-sub3 p{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-sub3+.nv-media{margin-top:6px}
+#prdDetail .nv .nv-media+.nv-media{margin-top:16px}
+#prdDetail .nv .nv-head+.nv-media{margin-top:0}
+#prdDetail .nv .nv-lk{display:inline-block;margin:20px 0 0;font:500 13px/1.4 'Noto Sans KR',sans-serif;color:#262E26;border-bottom:1px solid #262E26;padding:0 0 4px;text-decoration:none}
+#prdDetail .nv .nv-lks{display:flex;flex-wrap:wrap;gap:8px 28px}
+#prdDetail .nv .nv-end{height:96px}
+@media (max-width:760px){
+.nv .nv-mh{padding:36px 0 0 !important}
+.nv .nv-mh h2{font-size:40px !important}
+.nv .nv-head,.nv .nv-row,.nv .nv-fy{grid-template-columns:minmax(0,1fr) !important;gap:18px !important}
+.nv .nv-fy{column-gap:0 !important;row-gap:0 !important}
+.nv .nv-head h3,.nv .nv-ttl{font-size:32px !important}
+.nv .nv-sec{padding:64px 0 0 !important}
+.nv .nv-tabs{flex-wrap:nowrap !important;overflow-x:auto !important;-webkit-overflow-scrolling:touch}
+.nv .nv-sub3{grid-template-columns:52px minmax(0,1fr) !important;margin-top:40px !important}
+.nv .nv-sub3 .no{font-size:32px !important}
+.nv .nv-end{height:64px !important}
+}
+#prdDetail .nv .nv-lkc{text-align:center;margin:26px 0 0}
+#prdDetail .nv .nv-lkc .nv-lk{margin:0}
+#prdDetail .nv .nv-lkc+.nv-media{margin-top:36px}
+#prdDetail .nv .nv-media.nv-join{margin-top:0}
+#prdDetail .nv .nv-gift{margin:40px 0 0}
+#prdDetail .nv .nv-gift .nv-media{margin:0;background:#F7F4EE}
+#prdDetail .nv .nv-cards{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:28px;border-top:1px solid #262E26;padding-top:28px}
+#prdDetail .nv .nv-card .nv-media{margin:0}
+#prdDetail .nv .nv-card h4{font:500 26px/1.15 'Cormorant Garamond',serif;margin:20px 0 4px;color:#262E26}
+#prdDetail .nv .nv-card h5{font:500 14px/1.5 'Noto Sans KR',sans-serif;margin:0 0 10px;color:#262E26}
+#prdDetail .nv .nv-card p{font:400 13.5px/1.8 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-card .nv-lk{margin-top:16px}
+#prdDetail .nv .nv-std{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #262E26}
+#prdDetail .nv .nv-std>div{padding:24px 20px 26px 0;border-bottom:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-std>div+div{padding-left:20px;border-left:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-std i,#prdDetail .nv .nv-std em{display:block;font:italic 400 30px/1 'Cormorant Garamond',serif;color:#6F756B;margin:0 0 16px}
+#prdDetail .nv .nv-std b,#prdDetail .nv .nv-std strong{display:block;font:500 15px/1.5 'Noto Sans KR',sans-serif;color:#262E26;margin:0 0 8px}
+#prdDetail .nv .nv-std span{display:block;font:400 13px/1.75 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-std .nv-lk{margin-top:12px;font-size:12px}
+#prdDetail .nv .nv-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #262E26}
+#prdDetail .nv .nv-steps>div{padding:24px 22px 26px 0;border-bottom:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-steps>div+div{padding-left:22px;border-left:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-steps i,#prdDetail .nv .nv-steps em{display:block;font:italic 400 34px/1 'Cormorant Garamond',serif;color:#6F756B;margin:0 0 16px}
+#prdDetail .nv .nv-steps b,#prdDetail .nv .nv-steps strong{display:block;font:500 15px/1.5 'Noto Sans KR',sans-serif;color:#262E26;margin:0 0 8px}
+#prdDetail .nv .nv-steps span{display:block;font:400 13.5px/1.8 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-spec{border-top:1px solid #262E26}
+#prdDetail .nv .nv-spec>div{display:grid;grid-template-columns:140px minmax(0,1fr);padding:16px 0;border-bottom:1px solid rgba(38,46,38,.18);font:400 14px/1.75 'Noto Sans KR',sans-serif;color:#3a3f3a}
+#prdDetail .nv .nv-spec b,#prdDetail .nv .nv-spec strong{font-weight:500;color:#262E26}
+#prdDetail .nv .nv-note{margin:22px 0 0;padding:20px 24px;background:#F7F4EE;font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#3a3f3a}
+@media (max-width:760px){
+.nv .nv-cards{grid-template-columns:minmax(0,1fr) !important;gap:40px !important}
+.nv .nv-std{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important}
+.nv .nv-std>div{padding:20px 14px 22px 0 !important;border-left:0 !important}
+.nv .nv-std>div:nth-child(2n){padding-left:14px !important;border-left:1px solid rgba(38,46,38,.18) !important}
+.nv .nv-steps{grid-template-columns:minmax(0,1fr) !important}
+.nv .nv-steps>div{padding:20px 0 22px !important;border-left:0 !important}
+.nv .nv-spec>div{grid-template-columns:96px minmax(0,1fr) !important}
+}
+</style>
+<style>
+#prdDetail .nv .nv-fig{max-width:640px;margin:30px auto 0;background:none}
+#prdDetail .nv .nv-fig img{display:block;width:100%;height:auto}
+#prdDetail .nv .nv-sub3+.nv-fig{margin-top:14px}
+#prdDetail .nv .nv-fig+.nv-fig{margin-top:44px}
+#prdDetail .nv .nv-fig.sm{max-width:560px}
+#prdDetail .nv .nv-cap{text-align:center;margin:14px 0 0}
+#prdDetail .nv .nv-cap b{display:block;font:italic 500 19px/1.3 'Cormorant Garamond',serif;color:#262E26;letter-spacing:.01em}
+#prdDetail .nv .nv-cap small{display:block;font:400 12px/1.6 'Noto Sans KR',sans-serif;color:#6F756B;margin-top:4px}
+#prdDetail .nv .nv-fig+.nv-lkc{margin-top:22px}
+@media (max-width:760px){.nv .nv-fig{margin-top:22px !important}}
+</style><style>
+#prdDetail .nv .nv-fig.w420{max-width:420px}#prdDetail .nv .nv-fig.w480{max-width:480px}#prdDetail .nv .nv-fig.w520{max-width:520px}#prdDetail .nv .nv-fig.w560{max-width:560px}#prdDetail .nv .nv-fig.w640{max-width:640px}
+#prdDetail .nv .nv-gift{max-width:640px;margin:44px auto 0}
+#prdDetail .nv .nv-gift .nv-media{background:none}
+#prdDetail .nv .nv-chips{gap:0;align-items:center}
+#prdDetail .nv .nv-chips span{border:0;background:none;padding:0;font:500 12.5px/1.6 'Noto Sans KR',sans-serif;letter-spacing:.04em;color:#6F756B}
+#prdDetail .nv .nv-chips span+span:before{content:'';display:inline-block;width:1px;height:10px;background:rgba(38,46,38,.3);margin:0 12px;vertical-align:-1px}
+#prdDetail .nv .nv-fy{grid-auto-flow:column;grid-template-rows:repeat(4,auto)}
+@media (max-width:560px){#prdDetail .nv .nv-fy{grid-auto-flow:row;grid-template-rows:none;grid-template-columns:minmax(0,1fr) !important}}
+@media (max-width:760px) and (min-width:561px){.nv .nv-fy{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;column-gap:32px !important}}
+</style><style>
+#prdDetail .nv .nv-eb{font-size:13px;padding:7px 12px 6px;letter-spacing:.16em}
+#prdDetail .nv .nv-head h3.kr{font:700 27px/1.4 'Noto Sans KR',sans-serif;letter-spacing:-.02em;margin:16px 0 0;color:#262E26}
+#prdDetail .nv .nv-fy div{white-space:nowrap}
+#prdDetail .nv .nv-ing{display:flex;justify-content:center;align-items:center;gap:16px;margin:18px 0 0;flex-wrap:wrap}
+#prdDetail .nv .nv-ing span{display:inline-flex;align-items:center;gap:9px;font:500 13.5px/1.3 'Noto Sans KR',sans-serif;color:#262E26}
+#prdDetail .nv .nv-ing img{width:38px;height:38px;border-radius:50%;display:block}
+#prdDetail .nv .nv-ing i{font:300 18px/1 'Noto Sans KR',sans-serif;color:#9aa096;font-style:normal}
+#prdDetail .nv .nv-fig .nv-cap{margin-top:10px}
+@media (max-width:560px){#prdDetail .nv .nv-fy div{white-space:normal}#prdDetail .nv .nv-head h3.kr{font-size:21px !important;letter-spacing:-.03em}}
+</style><style>
+#prdDetail .nv .nv-mh .nv-sub{font:600 14px/1 'Noto Sans KR',sans-serif;letter-spacing:.2em;color:#5A7A6A;margin:0 0 14px}
+#prdDetail .nv .nv-mh h2{margin:0 0 12px}
+#prdDetail .nv .nv-tags{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 22px}
+#prdDetail .nv .nv-tags span{font:500 13.5px/1.5 'Noto Sans KR',sans-serif;color:#3d453d;letter-spacing:.01em}
+#prdDetail .nv .nv-tags i{font-style:normal;color:#9DB3A6;margin-right:2px}
+#prdDetail .nv .nv-mainv{max-width:640px;margin-left:auto;margin-right:auto}
+#prdDetail .nv .nv-iw{position:relative}
+#prdDetail .nv .nv-fn{position:absolute;left:0;right:0;bottom:7px;text-align:center;font:400 9.5px/1 'Noto Sans KR',sans-serif;letter-spacing:.02em}
+#prdDetail .nv .nv-fn.lt{color:rgba(255,255,255,.7)}
+#prdDetail .nv .nv-fn.dk{color:rgba(38,46,38,.38)}
+@media (max-width:560px){
+#prdDetail .nv .nv-ing{flex-wrap:nowrap;gap:8px}
+#prdDetail .nv .nv-ing span{font-size:11.5px;gap:5px;white-space:nowrap;letter-spacing:-.02em}
+#prdDetail .nv .nv-ing img{width:24px;height:24px}
+#prdDetail .nv .nv-ing i{font-size:13px}
+#prdDetail .nv .nv-fn{font-size:8.5px;bottom:5px}
+#prdDetail .nv .nv-mh .nv-sub{font-size:13px}
+}
+</style><style>
+#prdDetail .nv .nv-mainv video{background:#EFEBE3}
+#prdDetail .nv .nv-logos{display:flex;justify-content:center;align-items:flex-end;gap:64px;margin:36px auto 0;max-width:560px}
+#prdDetail .nv .nv-logos div{text-align:center}
+#prdDetail .nv .nv-logos img{display:block;margin:0 auto;height:118px;width:auto}
+#prdDetail .nv .nv-logos div:last-child img{height:62px;margin-bottom:28px}
+#prdDetail .nv .nv-logos p{margin:14px 0 0;font:500 13.5px/1.5 'Noto Sans KR',sans-serif;color:#262E26}
+#prdDetail .nv .nv-logos small{display:block;font:400 11px/1.5 'Noto Sans KR',sans-serif;color:#8a9087;margin-top:2px}
+#prdDetail .nv .nv-fin{text-align:center;padding:110px 0 90px}
+#prdDetail .nv .nv-fin span{display:block;width:40px;height:1px;background:#262E26;margin:0 auto 28px}
+#prdDetail .nv .nv-fin b{display:block;font:500 30px/1 'Cormorant Garamond',serif;color:#262E26;letter-spacing:.01em}
+#prdDetail .nv .nv-fin p{margin:12px 0 0;font:400 13px/1.6 'Noto Sans KR',sans-serif;color:#6F756B;letter-spacing:.06em}
+@media (max-width:760px){
+#prdDetail .nv .nv-tabs{display:grid !important;grid-template-columns:1fr 1fr;gap:8px !important;overflow:visible !important}
+#prdDetail .nv .nv-tabs a{text-align:center;padding:11px 6px 10px;font-size:11px;letter-spacing:.1em}#prdDetail .nv .nv-tabs a:last-child{grid-column:1/-1}
+#prdDetail .nv .nv-logos{gap:36px}
+#prdDetail .nv .nv-logos img{height:90px}
+#prdDetail .nv .nv-logos div:last-child img{height:46px;margin-bottom:22px}
+#prdDetail .nv .nv-fin{padding:80px 0 64px}
+}
+</style><style>
+#prdDetail .nv .nv-fn{font-size:8px !important;letter-spacing:0}
+#prdDetail .nv .nv-fn.rt{left:auto;right:4%;bottom:2%;text-align:right}
+#prdDetail .nv .nv-up b,#prdDetail .nv .nv-up strong{font-style:normal;font-size:21px}#prdDetail .nv .nv-cap .ln{font:400 17px/1 'Noto Sans KR',sans-serif;font-style:normal;margin-right:1px;vertical-align:1px}
+@media (max-width:760px){
+#prdDetail .nv .nv-tabs{display:flex !important;flex-wrap:wrap !important;gap:8px !important}
+#prdDetail .nv .nv-tabs a,#prdDetail .nv .nv-tabs a:last-child{grid-column:auto;padding:10px 14px 9px;flex:0 0 auto}
+#prdDetail .nv .nv-fn{font-size:7px !important}
+}
+</style><style>
+#prdDetail .nv .nv-tags em{font-style:normal;color:#9DB3A6;margin-right:2px}
+#prdDetail .nv .nv-ing em{font:300 18px/1 'Noto Sans KR',sans-serif;color:#9aa096;font-style:normal}
+#prdDetail .nv .nv-cap strong{display:block;font:italic 500 19px/1.3 'Cormorant Garamond',serif;color:#262E26;letter-spacing:.01em}
+#prdDetail .nv .nv-up strong{font-style:normal;font-size:21px}
+#prdDetail .nv .nv-fin strong{display:block;font:500 30px/1 'Cormorant Garamond',serif;color:#262E26;letter-spacing:.01em}
+#prdDetail .nv .nv-fin strong:before{content:'';display:block;width:40px;height:1px;background:#262E26;margin:0 auto 28px}
+@media (max-width:560px){#prdDetail .nv .nv-ing em{font-size:13px}}
+</style><div class="nv">
+
+<div class="nv-mh">
+<p class="nv-sub">BOTANICAL ORIGIN</p>
+<h2>Facial Deep Cleanser</h2>
+<div class="nv-tags"><span><em>#</em>Mild Deep Cleansing</span><span><em>#</em>3종 안전성 테스트 완료</span><span><em>#</em>Vegan</span><span><em>#</em>100ml</span></div>
+<p class="nv-lead">제주의 강한 햇빛과 거친 바람을 견디며 자란 원료.<br>그 땅이 만들어낸 기준으로, 자극 없이 깨끗하고 촉촉하게 씻어내는 세안제를 담았습니다.</p>
+
+<div class="nv-tabs"><a href="#nv-foryou">FOR YOU</a><a href="#nv-formula">01 NUE FORMULA</a><a href="#nv-sustain">02 SUSTAINABILITY</a></div>
+</div>
+
+<div class="nv-gift"><div class="nv-media"><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_d_gift.jpg" alt="스퀴저 키트 증정"></div><div class="nv-lkc"><a class="nv-lk" href="/product/detail.html?product_no=32">스퀴저 키트 보러가기 →</a></div></div>
+
+<div class="nv-media nv-mainv"><video autoplay loop muted playsinline preload="metadata" poster="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_poster.jpg"><source src="https://raw.githubusercontent.com/studionue/studionue-videos/main/pdp/v5/cleanser_main_v2.mp4" type="video/mp4"></video></div>
+
+<div class="nv-sec" id="nv-foryou">
+<div class="nv-head"><div><span class="nv-eb">FOR YOU</span><h3 class="kr">이런 분들께 추천해요</h3></div><p>매일 아침저녁 닿는 세안제이기에, 깨끗하게 씻어내면서도 피부 본연의 촉촉함은 지키도록 만들었습니다.</p></div>
+<div class="nv-fy">
+<div><em>01</em><span><strong>식물 유래 마일드한</strong> 세안제를 찾는 분</span></div>
+<div><em>02</em><span>세안 후 <strong>촉촉한 수분감</strong>을 원하는 분</span></div>
+<div><em>03</em><span><strong>생기있고 매끈한 피부결</strong>을 원하는 분</span></div>
+<div><em>04</em><span><strong>모공 속 노폐물·피지</strong>까지 씻어내고 싶은 분</span></div>
+<div><em>05</em><span><strong>장벽 강화와 진정</strong>까지 챙기고 싶은 분</span></div>
+<div><em>06</em><span><strong>테스트로 검증된</strong> 안심 화장품을 찾는 분</span></div>
+<div><em>07</em><span><strong>친환경·비건</strong> 화장품을 선택하고 싶은 분</span></div>
+</div>
+</div>
+
+<div class="nv-sec" id="nv-formula">
+<div class="nv-head"><div><span class="nv-eb">01 · NUE FORMULA</span><h3 class="kr">건강한 피부를 위한 네 가지 원칙</h3></div><p>무엇을 넣을지보다 무엇을 덜어낼지 먼저 고민했습니다. 깨끗하게 씻어내는 것부터 세안 후의 피부결까지, 네 가지 기준으로 처방했습니다.</p></div>
+
+<div class="nv-sub3"><span class="no">01</span><div><h4>Gentle Deep Cleansing</h4><h5>자극 없는 딥 클렌징</h5><p>코코넛 유래 아미노산 세정 성분과 제주 화산재추출물이 자극 없이 모공 속 노폐물과 피지, 메이크업까지 말끔하게 씻어냅니다.</p></div></div>
+<div class="nv-fig w480"><div class="nv-iw"><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_e_g1.gif" alt=""><span class="nv-fn lt">※ 원료적 특성에 한함</span></div><div class="nv-ing"><span><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_ic_g1_0.png" alt="">코코넛 유래 아미노산</span><em>+</em><span><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_ic_g1_1.png" alt="">제주 화산재추출물</span></div><p class="nv-cap"><small>※ 소듐코코일글라이시네이트, 포타슘코코일글리시네이트</small></p></div>
+
+<div class="nv-sub3"><span class="no">02</span><div><h4>Calm &amp; Protect</h4><h5>피부 진정 &amp; 항산화</h5><p>제주산 녹차수와 편백수가 세안 후 민감해진 피부를 부드럽게 진정시키고, 피부를 건강하게 가꿉니다.</p></div></div>
+<div class="nv-fig w480"><div class="nv-iw"><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_e_g2s.gif" alt=""><span class="nv-fn dk">※ 원료적 특성에 한함</span></div><div class="nv-ing"><span><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_ic_g2_0.png" alt="">제주 녹차수</span><em>+</em><span><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_ic_g2_1.png" alt="">편백수</span></div></div>
+
+<div class="nv-sub3"><span class="no">03</span><div><h4>Moist Finish</h4><h5>수분 보충 &amp; 피부결 케어</h5><p>알란토인과 제주 특허 원료 Jeju Active Complex가 세안 후 손실된 수분을 채워, 촉촉하고 생기 있는 피부결로 마무리합니다.</p></div></div>
+<div class="nv-fig w480"><div class="nv-iw"><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_e_g3s.gif" alt=""><span class="nv-fn dk">※ 원료적 특성에 한함</span></div><div class="nv-ing"><span><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_ic_g3_0.png" alt="">알란토인</span><em>+</em><span><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_ic_g3_1.png" alt="">Jeju Active Complex™</span></div></div>
+<div class="nv-fig w520"><div class="nv-iw"><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_c_jac.jpg" alt="제주 특허 원료"><span class="nv-fn dk rt">※ 원료적 특성에 한함</span></div><p class="nv-cap"><strong>Jeju Active Complex™</strong><small>특허받은 5가지 보태니컬 성분</small></p></div>
+<div class="nv-lkc"><a class="nv-lk" href="/new/page07-r.html">Jeju Active Complex 더 알아보기 →</a></div>
+
+<div class="nv-sub3"><span class="no">04</span><div><h4>Tested &amp; Clean</h4><h5>안전성 테스트 및 유해성분 배제</h5><p>누구나 안심하고 사용할 수 있도록 3종 안전성 테스트를 완료했고, 처음 설계부터 12종 유해성분을 배제했습니다.</p></div></div>
+<div class="nv-fig w480"><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_c_safety.jpg" alt="3종 안전성 테스트"><p class="nv-cap"><small>OATC 피부임상시험센터 · 국가공인시험검사기관 시험 완료</small></p></div>
+<div class="nv-lkc"><a class="nv-lk" href="/new/page11-02-r.html">시험성적서 자세히 보기 (3종 테스트) →</a></div>
+<div class="nv-fig w420"><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_c_12.jpg" alt="12종 유해성분 제외"></div>
+<div class="nv-lkc"><a class="nv-lk" href="/new/page12-02-r.html">유해성분 자세히 알아보기 →</a></div>
+</div>
+
+<div class="nv-sec" id="nv-sustain">
+<div class="nv-head"><div><span class="nv-eb">02 · SUSTAINABILITY</span><h3 class="kr">끝까지 남김없이</h3></div><p>튜브부터 상자, 인쇄 잉크까지. 다 쓰고 난 뒤의 모습까지 생각해 패키지를 만들었습니다.</p></div>
+
+<div class="nv-sub3"><span class="no">01</span><div><h4>Single Aluminum Tube</h4><h5>단일 알루미늄 튜브</h5><p>순도 높은 재활용을 위해 입구까지 단일 알루미늄으로 제작했습니다. 빛과 공기를 막아 내용물을 지키고, 필요한 양만 짜서 쓸 수 있습니다.</p></div></div>
+<div class="nv-fig w560"><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_d_tube.jpg" alt="단일 알루미늄 튜브"></div>
+<div class="nv-lkc"><a class="nv-lk" href="/new/page08-r.html">알루미늄 튜브를 선택한 이유 →</a></div>
+
+<div class="nv-sub3"><span class="no">02</span><div><h4>Reusable Box</h4><h5>재사용이 가능한 패키징</h5><p>2차 포장 박스는 리무버블 스티커를 떼어 필통이나 수납함으로 다시 쓸 수 있습니다. 합성수지나 코팅 없이 제작해 분리배출 시에는 종이류로 재활용됩니다.</p></div></div>
+<div class="nv-fig w640"><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_d_box.jpg" alt="재사용 가능한 패키징"><p class="nv-cap nv-up"><strong><span class="ln">3</span> Re Campaign</strong><small>ReNew · ReDuce · ReUse</small></p></div>
+
+<div class="nv-sub3"><span class="no">03</span><div><h4>FSC Paper &amp; Soy Ink</h4><h5>FSC 인증 종이 + Soy Ink</h5><p>지속 가능하게 관리된 산림에서 생산한 FSC 인증 종이와, 석유계 잉크보다 유해물질이 적은 대두 기반 Soy Ink로 인쇄했습니다.</p></div></div>
+<div class="nv-logos"><div><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_logo_fsc.png" alt="FSC"><p>FSC 인증 종이<small>FSC™ A000543 · ~2031.01</small></p></div><div><img src="https://studionue.cafe24.com/web/upload/NNEditor/20261102/nv5_logo_soy.png" alt="American Soybean Association"><p>Soy Ink 인쇄<small>ASA SoySeal License</small></p></div></div>
+</div>
+
+<div class="nv-fin"><strong>Studio Nue.</strong><p>제주에서, 꼭 필요한 것만</p></div>
+</div>
+<!-- /nv -->
