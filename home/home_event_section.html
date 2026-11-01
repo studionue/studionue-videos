@@ -1,0 +1,40 @@
+<!-- NUE EVENT CARDS (261101) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap">
+<style id="nue-ev-css">
+.nue-ev{max-width:1440px;margin:0 auto;padding:110px 43px 30px;box-sizing:border-box;color:#262E26;font-family:'Pretendard','Noto Sans KR',sans-serif;word-break:keep-all}
+.nue-ev *{box-sizing:border-box}
+.nue-ev .ev-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin:0 0 34px}
+.nue-ev .ev-eb{display:inline-block;background:#262E26;color:#fff;font:500 11px/1.25 'Pretendard','Noto Sans KR',sans-serif;letter-spacing:.17em;padding:5px 8px 4px}
+.nue-ev .ev-ttl{font:500 44px/1.05 'Cormorant Garamond',serif;margin:14px 0 0;color:#262E26;letter-spacing:-.005em}
+.nue-ev .ev-sub{font:400 14px/1.7 'Pretendard','Noto Sans KR',sans-serif;color:#6F756B;margin:0;text-align:right}
+.nue-ev .ev-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.nue-ev .ev-card{position:relative;display:block;overflow:hidden;background:#F7F4EE;text-decoration:none;color:#262E26}
+.nue-ev .ev-card img{display:block;width:100%;height:auto;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.nue-ev .ev-card:hover img{transform:scale(1.025)}
+.nue-ev .ev-tag{position:absolute;top:5.2%;left:6.6%;background:#262E26;color:#fff;font:500 11px/1.25 'Pretendard','Noto Sans KR',sans-serif;letter-spacing:.17em;padding:6px 9px 5px}
+.nue-ev .ev-cta{position:absolute;right:6.6%;top:86.2%;font:500 13px/1.4 'Pretendard','Noto Sans KR',sans-serif;color:#262E26;border-bottom:1px solid #262E26;padding:0 0 3px;white-space:nowrap}
+@media (max-width:1024px){.nue-ev{padding:80px 20px 20px}.nue-ev .ev-ttl{font-size:36px}.nue-ev .ev-grid{gap:14px}.nue-ev .ev-cta{font-size:12px}}
+@media (max-width:760px){
+.nue-ev{padding:56px 0 8px}
+.nue-ev .ev-hd{display:block;padding:0 20px;margin:0 0 22px}
+.nue-ev .ev-ttl{font-size:34px}
+.nue-ev .ev-sub{text-align:left;margin-top:10px;font-size:13px}
+.nue-ev .ev-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding:0 20px 6px;scrollbar-width:none}
+.nue-ev .ev-grid::-webkit-scrollbar{display:none}
+.nue-ev .ev-card{flex:0 0 76%;scroll-snap-align:start;scroll-margin-left:20px}
+.nue-ev .ev-tag{font-size:9.5px;padding:4px 6px 3px;letter-spacing:.14em}
+.nue-ev .ev-cta{font-size:10.5px;padding-bottom:2px}
+}
+</style>
+<section class="nue-ev" aria-label="Studio Nue member benefits">
+  <div class="ev-hd">
+    <div><span class="ev-eb">EVENT</span><h2 class="ev-ttl">Member Benefits</h2></div>
+    <p class="ev-sub">스튜디오뉴 회원이 되어<br>세 가지 혜택을 만나보세요.</p>
+  </div>
+  <div class="ev-grid">
+    <a class="ev-card" href="/member/join.html"><img src="https://cdn.jsdelivr.net/gh/studionue/studionue-videos@main/home/event01.jpg" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/studionue/studionue-videos/main/home/event01.jpg'" alt="EVENT 01 WELCOME 신규 가입 시 3,000원 쿠폰" width="1000" height="1200" loading="lazy"><span class="ev-tag">EVENT 01</span><span class="ev-cta">회원가입 →</span></a>
+    <a class="ev-card" href="/member/join.html"><img src="https://cdn.jsdelivr.net/gh/studionue/studionue-videos@main/home/event02.jpg" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/studionue/studionue-videos/main/home/event02.jpg'" alt="EVENT 02 MEMBERSHIP 구매 금액 5% 적립" width="1000" height="1200" loading="lazy"><span class="ev-tag">EVENT 02</span><span class="ev-cta">회원가입 →</span></a>
+    <a class="ev-card" href="/board/review/list.html?board_no=4"><img src="https://cdn.jsdelivr.net/gh/studionue/studionue-videos@main/home/event03.jpg" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/studionue/studionue-videos/main/home/event03.jpg'" alt="EVENT 03 REVIEW 리뷰 작성 시 2,000원 적립" width="1000" height="1200" loading="lazy"><span class="ev-tag">EVENT 03</span><span class="ev-cta">리뷰 게시판 →</span></a>
+  </div>
+</section>
+<!-- /NUE EVENT CARDS -->
