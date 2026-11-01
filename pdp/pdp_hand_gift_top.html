@@ -1,0 +1,135 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+#prdDetail .nv{--ink:#262E26;--mute:#6F756B;--line:rgba(38,46,38,.18);--stone:#EFEBE3;--paper:#F7F4EE;font-family:'Noto Sans KR',sans-serif;color:#262E26;max-width:860px;margin:0 auto;word-break:keep-all;-webkit-font-smoothing:antialiased;text-align:left}
+#prdDetail .nv *{box-sizing:border-box}
+#prdDetail .nv p{margin:0}
+#prdDetail .nv h2,#prdDetail .nv h3,#prdDetail .nv h4,#prdDetail .nv h5{display:block;width:auto;border:0;padding:0;text-align:left;float:none}
+#prdDetail .nv .nv-eb{display:inline-block;background:#262E26;color:#fff;font:500 11px/1.25 'Noto Sans KR',sans-serif;letter-spacing:.17em;padding:5px 8px 4px;margin:0}
+#prdDetail .nv .nv-ser{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:-.01em;color:#262E26}
+#prdDetail .nv .nv-mh{padding:56px 0 0}
+#prdDetail .nv .nv-mh .nv-sub{font:500 12px/1 'Noto Sans KR',sans-serif;letter-spacing:.22em;color:#6F756B;margin:0 0 14px}
+#prdDetail .nv .nv-mh h2{font:500 56px/1.02 'Cormorant Garamond',serif;margin:0 0 22px;color:#262E26}
+#prdDetail .nv .nv-lead{font:400 15px/1.85 'Noto Sans KR',sans-serif;color:#3d453d;margin:0 0 22px}
+#prdDetail .nv .nv-chips{display:flex;flex-wrap:wrap;gap:8px}
+#prdDetail .nv .nv-chips span{border:1px solid rgba(38,46,38,.22);font:500 12px/1 'Noto Sans KR',sans-serif;letter-spacing:.05em;padding:8px 11px;background:#fff;color:#262E26}
+#prdDetail .nv .nv-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 0;padding:0 0 30px;border-bottom:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-tabs a{border:1px solid rgba(38,46,38,.35);padding:10px 14px 9px;font:500 11.5px/1.2 'Noto Sans KR',sans-serif;letter-spacing:.12em;color:#262E26;text-decoration:none;background:transparent;white-space:nowrap}
+#prdDetail .nv .nv-tabs a:hover{background:#262E26;color:#fff;border-color:#262E26}
+#prdDetail .nv .nv-media{margin:40px 0 0;background:#EFEBE3;overflow:hidden}
+#prdDetail .nv .nv-media video,#prdDetail .nv .nv-media img{display:block;width:100%;height:auto;margin:0;border:0}
+#prdDetail .nv .nv-sec{padding:96px 0 0}
+#prdDetail .nv .nv-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin:0 0 34px}
+#prdDetail .nv .nv-head h3{font:500 42px/1.08 'Cormorant Garamond',serif;margin:14px 0 0;color:#262E26}
+#prdDetail .nv .nv-head h3 span{display:block;font:500 15px/1.5 'Noto Sans KR',sans-serif;letter-spacing:0;margin-top:10px;color:#3d453d}
+#prdDetail .nv .nv-head p{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-fy{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:48px;border-top:1px solid #262E26}
+#prdDetail .nv .nv-fy div{display:grid;grid-template-columns:44px minmax(0,1fr);padding:17px 0;border-bottom:1px solid rgba(38,46,38,.18);font:400 14.5px/1.7 'Noto Sans KR',sans-serif;color:#3a3f3a}
+#prdDetail .nv .nv-fy i{font:italic 400 22px/1.2 'Cormorant Garamond',serif;color:#6F756B}
+#prdDetail .nv .nv-fy b{font-weight:600;color:#262E26}
+#prdDetail .nv .nv-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+#prdDetail .nv .nv-row .nv-media{margin:0}
+#prdDetail .nv .nv-ttl{font:500 40px/1.1 'Cormorant Garamond',serif;margin:14px 0 6px;color:#262E26}
+#prdDetail .nv .nv-kr{font:500 15px/1.5 'Noto Sans KR',sans-serif;margin:0 0 16px;color:#3d453d}
+#prdDetail .nv .nv-txt{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a;margin:0 0 6px}
+#prdDetail .nv .nv-sub3{display:grid;grid-template-columns:72px minmax(0,1fr);gap:0 18px;align-items:baseline;padding:28px 0 22px;border-top:1px solid #262E26;margin-top:56px}
+#prdDetail .nv .nv-head+.nv-sub3{margin-top:0}
+#prdDetail .nv .nv-sub3 .no{font:italic 400 40px/1 'Cormorant Garamond',serif;color:#6F756B}
+#prdDetail .nv .nv-sub3 h4{font:500 26px/1.15 'Cormorant Garamond',serif;margin:0 0 4px;color:#262E26}
+#prdDetail .nv .nv-sub3 h5{font:500 14.5px/1.5 'Noto Sans KR',sans-serif;margin:0 0 10px;color:#262E26}
+#prdDetail .nv .nv-sub3 p{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-sub3+.nv-media{margin-top:6px}
+#prdDetail .nv .nv-media+.nv-media{margin-top:16px}
+#prdDetail .nv .nv-head+.nv-media{margin-top:0}
+#prdDetail .nv .nv-lk{display:inline-block;margin:20px 0 0;font:500 13px/1.4 'Noto Sans KR',sans-serif;color:#262E26;border-bottom:1px solid #262E26;padding:0 0 4px;text-decoration:none}
+#prdDetail .nv .nv-lks{display:flex;flex-wrap:wrap;gap:8px 28px}
+#prdDetail .nv .nv-end{height:96px}
+@media (max-width:760px){
+.nv .nv-mh{padding:36px 0 0 !important}
+.nv .nv-mh h2{font-size:40px !important}
+.nv .nv-head,.nv .nv-row,.nv .nv-fy{grid-template-columns:minmax(0,1fr) !important;gap:18px !important}
+.nv .nv-fy{column-gap:0 !important;row-gap:0 !important}
+.nv .nv-head h3,.nv .nv-ttl{font-size:32px !important}
+.nv .nv-sec{padding:64px 0 0 !important}
+.nv .nv-tabs{flex-wrap:nowrap !important;overflow-x:auto !important;-webkit-overflow-scrolling:touch}
+.nv .nv-sub3{grid-template-columns:52px minmax(0,1fr) !important;margin-top:40px !important}
+.nv .nv-sub3 .no{font-size:32px !important}
+.nv .nv-end{height:64px !important}
+}
+#prdDetail .nv .nv-lkc{text-align:center;margin:26px 0 0}
+#prdDetail .nv .nv-lkc .nv-lk{margin:0}
+#prdDetail .nv .nv-lkc+.nv-media{margin-top:36px}
+#prdDetail .nv .nv-media.nv-join{margin-top:0}
+#prdDetail .nv .nv-gift{margin:40px 0 0}
+#prdDetail .nv .nv-gift .nv-media{margin:0;background:#F7F4EE}
+</style>
+<div class="nv">
+
+<div class="nv-mh">
+<p class="nv-sub">BOTANICAL ORIGIN</p>
+<h2>Hand Comfort Cream</h2>
+<p class="nv-lead">제주의 강한 햇빛과 거친 바람을 견디며 자란 원료.<br>그 땅이 만들어낸 기준으로, 끈적임 없이 사르르 스며드는 핸드크림을 담았습니다.</p>
+<div class="nv-chips"><span>미백 · 주름개선 기능성</span><span>알러젠 프리 향</span><span>Vegan</span><span>50ml</span></div>
+<div class="nv-tabs"><a href="#nv-foryou">FOR YOU</a><a href="#nv-texture">01 TEXTURE &amp; SCENT</a><a href="#nv-formula">02 NUE FORMULA</a><a href="#nv-sustain">03 SUSTAINABILITY</a></div>
+</div>
+
+<div class="nv-gift"><div class="nv-media"><img src="https://studionue.cafe24.com/Products/tincase, squeezer/1키트증정(최종).png" alt="스퀴저 키트 증정"></div><div class="nv-lkc"><a class="nv-lk" href="/product/detail.html?product_no=32">스퀴저 키트 보러가기 →</a></div></div>
+
+<div class="nv-media"><video autoplay muted loop playsinline preload="metadata"><source src="https://cdn.jsdelivr.net/gh/studionue/studionue-videos@main/handcream main.mp4" type="video/mp4"><source src="https://raw.githubusercontent.com/studionue/studionue-videos/main/handcream main.mp4" type="video/mp4"></video></div>
+
+<div class="nv-sec" id="nv-foryou">
+<div class="nv-head"><div><span class="nv-eb">FOR YOU</span><h3>Made for hands, every day.<span>이런 분들께 추천해요</span></h3></div><p>하루에도 몇 번씩 바르는 핸드크림이기에, 가벼운 사용감과 확실한 보습, 손을 생각한 성분을 함께 담았습니다.</p></div>
+<div class="nv-fy">
+<div><i>01</i><span><b>끈적이거나 번들거리지 않는</b> 핸드크림을 원하는 분</span></div>
+<div><i>02</i><span>향이 자극적이지 않으면서 <b>은은하고 산뜻한 향</b>을 좋아하는 분</span></div>
+<div><i>03</i><span>보습뿐 아니라 <b>주름·탄력·미백</b>까지 함께 케어하고 싶은 분</span></div>
+<div><i>04</i><span>수시로 발라도 부담 없는 <b>가벼운 텍스처</b>의 핸드크림을 찾는 분</span></div>
+<div><i>05</i><span><b>시어버터·글리세린</b> 등 확실한 보습 성분으로 손을 케어하고 싶은 분</span></div>
+<div><i>06</i><span>남녀노소 안심하고 쓸 수 있도록 <b>테스트로 검증된</b> 화장품을 찾는 분</span></div>
+<div><i>07</i><span>지구와 동물을 생각한 <b>친환경·비건</b> 화장품을 선택하고 싶은 분</span></div>
+</div>
+</div>
+
+<div class="nv-sec" id="nv-texture">
+<div class="nv-head"><div><span class="nv-eb">01 · TEXTURE &amp; SCENT</span><h3>Melting Soft Touch<span>사르르 스며드는 부드러운 사용감</span></h3></div><p>가볍게 펴 발리고 빠르게 스며들어, 바른 직후에도 휴대폰과 키보드를 편하게 쓸 수 있습니다.</p></div>
+<div class="nv-media"><video autoplay muted loop playsinline preload="metadata"><source src="https://cdn.jsdelivr.net/gh/studionue/studionue-videos@main/HandcreamVideo.mp4" type="video/mp4"><source src="https://raw.githubusercontent.com/studionue/studionue-videos/main/HandcreamVideo.mp4" type="video/mp4"></video></div>
+<div class="nv-sub3"><span class="no">01</span><div><h4>Texture</h4><h5>텍스처</h5><p>에센스 같이 가벼운 텍스처로, 끈적임이나 번들거림 없이 빠르게 흡수되어 오래도록 매끄러운 손결을 선사합니다.</p></div></div>
+<div class="nv-sub3"><span class="no">02</span><div><h4>Scent</h4><h5>향</h5><p>제주 시트러스의 상큼함과 녹차의 청량함을 블렌딩한 산뜻한 향이 은은하게 남습니다. (알러젠 프리 인증)</p></div></div>
+</div>
+
+<div class="nv-sec" id="nv-formula">
+<div class="nv-head"><div><span class="nv-eb">02 · NUE FORMULA</span><h3>Nue Formula<span>건강한 피부를 위한 세 가지 원칙</span></h3></div><p>무엇을 넣을지보다 무엇을 덜어낼지 먼저 고민했습니다. 스튜디오뉴의 모든 제품은 이 세 가지 기준을 통과한 처방으로 만들어집니다.</p></div>
+
+<div class="nv-sub3"><span class="no">01</span><div><h4>Honest Vegan</h4><h5>정직하게 선별한 비건 원료</h5><p>제주 특허 원료 Jeju Active Complex와 시어버터, 제주 녹차·유자·귤껍질 추출물까지. 식물성 원료의 시너지로 건조하고 거친 손을 촉촉하게 가꿉니다.</p></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/Handcream/★★핸드크림 비건 원료(최종).png" alt="비건 원료"></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/Handcream/★★제주 특허원료(최종).png" alt="제주 특허 원료"></div>
+<div class="nv-lkc"><a class="nv-lk" href="/new/page07-r.html">Jeju Active Complex 더 알아보기 →</a></div>
+<div class="nv-media"><video autoplay muted loop playsinline preload="metadata"><source src="https://cdn.jsdelivr.net/gh/studionue/studionue-videos@main/synergy.mp4" type="video/mp4"><source src="https://raw.githubusercontent.com/studionue/studionue-videos/main/synergy.mp4" type="video/mp4"></video></div>
+
+<div class="nv-sub3"><span class="no">02</span><div><h4>Functional Care</h4><h5>기능성 성분 함유</h5><p>식약처 기능성 고시 원료인 아데노신(주름개선)과 나이아신아마이드(미백)를 담아, 바를수록 손 피부의 탄력과 피부 빛을 함께 챙깁니다.</p></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/Handcream/2종 기능성 성분(최종).png" alt="2종 기능성 성분"></div>
+<div class="nv-media nv-join"><video autoplay muted loop playsinline preload="metadata"><source src="https://cdn.jsdelivr.net/gh/studionue/studionue-videos@main/FunctionalIngredients.mp4" type="video/mp4"><source src="https://raw.githubusercontent.com/studionue/studionue-videos/main/FunctionalIngredients.mp4" type="video/mp4"></video></div>
+
+<div class="nv-sub3"><span class="no">03</span><div><h4>Tested &amp; Clean</h4><h5>안전성 테스트 및 유해성분 배제</h5><p>누구나 안심하고 사용할 수 있도록 3종 안전성 테스트를 완료했고, 처음 설계부터 12종 유해성분을 배제했습니다.</p></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/Handcream/★핸드크림 안전성 테스트(최종).png" alt="3종 안전성 테스트"></div>
+<div class="nv-lkc"><a class="nv-lk" href="/new/page11-03-r.html">시험성적서 자세히 보기 (3종 테스트) →</a></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/Handcream/핸드크림 12종(최종).png" alt="12종 유해성분 제외"></div>
+<div class="nv-lkc"><a class="nv-lk" href="/new/page12-03-r.html">유해성분 자세히 알아보기 →</a></div>
+</div>
+
+<div class="nv-sec" id="nv-sustain">
+<div class="nv-head"><div><span class="nv-eb">03 · SUSTAINABILITY</span><h3>Sustainability<span>끝까지 남김없이</span></h3></div><p>튜브부터 상자, 인쇄 잉크까지. 다 쓰고 난 뒤의 모습까지 생각해 패키지를 만들었습니다.</p></div>
+
+<div class="nv-sub3"><span class="no">01</span><div><h4>Single Aluminum Tube</h4><h5>단일 알루미늄 튜브</h5><p>순도 높은 재활용을 위해 입구까지 단일 알루미늄으로 제작했습니다. 빛과 공기를 막아 내용물을 지키고, 필요한 양만 짜서 쓸 수 있습니다.</p></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/Handcream/핸드크림 튜브(최종).png" alt="단일 알루미늄 튜브"></div>
+<div class="nv-lkc"><a class="nv-lk" href="/new/page08-r.html">알루미늄 튜브를 선택한 이유 →</a></div>
+
+<div class="nv-sub3"><span class="no">02</span><div><h4>Reusable Box</h4><h5>재사용이 가능한 패키징</h5><p>2차 포장 박스는 리무버블 스티커를 떼어 필통이나 수납함으로 다시 쓸 수 있습니다. 합성수지나 코팅 없이 제작해 분리배출 시에는 종이류로 재활용됩니다.</p></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/Handcream/2차포장박스(최종).png" alt="재사용 가능한 패키징"></div>
+
+<div class="nv-sub3"><span class="no">03</span><div><h4>FSC Paper &amp; Soy Ink</h4><h5>FSC 인증 종이 + Soy Ink</h5><p>지속 가능하게 관리된 산림에서 생산한 FSC 인증 종이와, 석유계 잉크보다 유해물질이 적은 대두 기반 Soy Ink로 인쇄했습니다.</p></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/Handcream/FSC SoyInk(최종).png" alt="FSC 인증 종이와 Soy Ink"></div>
+</div>
+
+<div class="nv-end"></div>
+</div>
+<!-- /nv -->
