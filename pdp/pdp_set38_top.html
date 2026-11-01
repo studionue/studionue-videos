@@ -1,0 +1,134 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+#prdDetail .nv{--ink:#262E26;--mute:#6F756B;--line:rgba(38,46,38,.18);--stone:#EFEBE3;--paper:#F7F4EE;font-family:'Noto Sans KR',sans-serif;color:#262E26;max-width:860px;margin:0 auto;word-break:keep-all;-webkit-font-smoothing:antialiased;text-align:left}
+#prdDetail .nv *{box-sizing:border-box}
+#prdDetail .nv p{margin:0}
+#prdDetail .nv h2,#prdDetail .nv h3,#prdDetail .nv h4,#prdDetail .nv h5{display:block;width:auto;border:0;padding:0;text-align:left;float:none}
+#prdDetail .nv .nv-eb{display:inline-block;background:#262E26;color:#fff;font:500 11px/1.25 'Noto Sans KR',sans-serif;letter-spacing:.17em;padding:5px 8px 4px;margin:0}
+#prdDetail .nv .nv-ser{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:-.01em;color:#262E26}
+#prdDetail .nv .nv-mh{padding:56px 0 0}
+#prdDetail .nv .nv-mh .nv-sub{font:500 12px/1 'Noto Sans KR',sans-serif;letter-spacing:.22em;color:#6F756B;margin:0 0 14px}
+#prdDetail .nv .nv-mh h2{font:500 56px/1.02 'Cormorant Garamond',serif;margin:0 0 22px;color:#262E26}
+#prdDetail .nv .nv-lead{font:400 15px/1.85 'Noto Sans KR',sans-serif;color:#3d453d;margin:0 0 22px}
+#prdDetail .nv .nv-chips{display:flex;flex-wrap:wrap;gap:8px}
+#prdDetail .nv .nv-chips span{border:1px solid rgba(38,46,38,.22);font:500 12px/1 'Noto Sans KR',sans-serif;letter-spacing:.05em;padding:8px 11px;background:#fff;color:#262E26}
+#prdDetail .nv .nv-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 0;padding:0 0 30px;border-bottom:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-tabs a{border:1px solid rgba(38,46,38,.35);padding:10px 14px 9px;font:500 11.5px/1.2 'Noto Sans KR',sans-serif;letter-spacing:.12em;color:#262E26;text-decoration:none;background:transparent;white-space:nowrap}
+#prdDetail .nv .nv-tabs a:hover{background:#262E26;color:#fff;border-color:#262E26}
+#prdDetail .nv .nv-media{margin:40px 0 0;background:#EFEBE3;overflow:hidden}
+#prdDetail .nv .nv-media video,#prdDetail .nv .nv-media img{display:block;width:100%;height:auto;margin:0;border:0}
+#prdDetail .nv .nv-sec{padding:96px 0 0}
+#prdDetail .nv .nv-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin:0 0 34px}
+#prdDetail .nv .nv-head h3{font:500 42px/1.08 'Cormorant Garamond',serif;margin:14px 0 0;color:#262E26}
+#prdDetail .nv .nv-head h3 span{display:block;font:500 15px/1.5 'Noto Sans KR',sans-serif;letter-spacing:0;margin-top:10px;color:#3d453d}
+#prdDetail .nv .nv-head p{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-fy{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:48px;border-top:1px solid #262E26}
+#prdDetail .nv .nv-fy div{display:grid;grid-template-columns:44px minmax(0,1fr);padding:17px 0;border-bottom:1px solid rgba(38,46,38,.18);font:400 14.5px/1.7 'Noto Sans KR',sans-serif;color:#3a3f3a}
+#prdDetail .nv .nv-fy i{font:italic 400 22px/1.2 'Cormorant Garamond',serif;color:#6F756B}
+#prdDetail .nv .nv-fy b{font-weight:600;color:#262E26}
+#prdDetail .nv .nv-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+#prdDetail .nv .nv-row .nv-media{margin:0}
+#prdDetail .nv .nv-ttl{font:500 40px/1.1 'Cormorant Garamond',serif;margin:14px 0 6px;color:#262E26}
+#prdDetail .nv .nv-kr{font:500 15px/1.5 'Noto Sans KR',sans-serif;margin:0 0 16px;color:#3d453d}
+#prdDetail .nv .nv-txt{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a;margin:0 0 6px}
+#prdDetail .nv .nv-sub3{display:grid;grid-template-columns:72px minmax(0,1fr);gap:0 18px;align-items:baseline;padding:28px 0 22px;border-top:1px solid #262E26;margin-top:56px}
+#prdDetail .nv .nv-head+.nv-sub3{margin-top:0}
+#prdDetail .nv .nv-sub3 .no{font:italic 400 40px/1 'Cormorant Garamond',serif;color:#6F756B}
+#prdDetail .nv .nv-sub3 h4{font:500 26px/1.15 'Cormorant Garamond',serif;margin:0 0 4px;color:#262E26}
+#prdDetail .nv .nv-sub3 h5{font:500 14.5px/1.5 'Noto Sans KR',sans-serif;margin:0 0 10px;color:#262E26}
+#prdDetail .nv .nv-sub3 p{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-sub3+.nv-media{margin-top:6px}
+#prdDetail .nv .nv-media+.nv-media{margin-top:16px}
+#prdDetail .nv .nv-head+.nv-media{margin-top:0}
+#prdDetail .nv .nv-lk{display:inline-block;margin:20px 0 0;font:500 13px/1.4 'Noto Sans KR',sans-serif;color:#262E26;border-bottom:1px solid #262E26;padding:0 0 4px;text-decoration:none}
+#prdDetail .nv .nv-lks{display:flex;flex-wrap:wrap;gap:8px 28px}
+#prdDetail .nv .nv-end{height:96px}
+@media (max-width:760px){
+.nv .nv-mh{padding:36px 0 0 !important}
+.nv .nv-mh h2{font-size:40px !important}
+.nv .nv-head,.nv .nv-row,.nv .nv-fy{grid-template-columns:minmax(0,1fr) !important;gap:18px !important}
+.nv .nv-fy{column-gap:0 !important;row-gap:0 !important}
+.nv .nv-head h3,.nv .nv-ttl{font-size:32px !important}
+.nv .nv-sec{padding:64px 0 0 !important}
+.nv .nv-tabs{flex-wrap:nowrap !important;overflow-x:auto !important;-webkit-overflow-scrolling:touch}
+.nv .nv-sub3{grid-template-columns:52px minmax(0,1fr) !important;margin-top:40px !important}
+.nv .nv-sub3 .no{font-size:32px !important}
+.nv .nv-end{height:64px !important}
+}
+#prdDetail .nv .nv-lkc{text-align:center;margin:26px 0 0}
+#prdDetail .nv .nv-lkc .nv-lk{margin:0}
+#prdDetail .nv .nv-lkc+.nv-media{margin-top:36px}
+#prdDetail .nv .nv-media.nv-join{margin-top:0}
+#prdDetail .nv .nv-gift{margin:40px 0 0}
+#prdDetail .nv .nv-gift .nv-media{margin:0;background:#F7F4EE}
+#prdDetail .nv .nv-cards{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:28px;border-top:1px solid #262E26;padding-top:28px}
+#prdDetail .nv .nv-card .nv-media{margin:0}
+#prdDetail .nv .nv-card h4{font:500 26px/1.15 'Cormorant Garamond',serif;margin:20px 0 4px;color:#262E26}
+#prdDetail .nv .nv-card h5{font:500 14px/1.5 'Noto Sans KR',sans-serif;margin:0 0 10px;color:#262E26}
+#prdDetail .nv .nv-card p{font:400 13.5px/1.8 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-card .nv-lk{margin-top:16px}
+#prdDetail .nv .nv-std{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #262E26}
+#prdDetail .nv .nv-std>div{padding:24px 20px 26px 0;border-bottom:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-std>div+div{padding-left:20px;border-left:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-std i{display:block;font:italic 400 30px/1 'Cormorant Garamond',serif;color:#6F756B;margin:0 0 16px}
+#prdDetail .nv .nv-std b{display:block;font:500 15px/1.5 'Noto Sans KR',sans-serif;color:#262E26;margin:0 0 8px}
+#prdDetail .nv .nv-std span{display:block;font:400 13px/1.75 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-std .nv-lk{margin-top:12px;font-size:12px}
+#prdDetail .nv .nv-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #262E26}
+#prdDetail .nv .nv-steps>div{padding:24px 22px 26px 0;border-bottom:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-steps>div+div{padding-left:22px;border-left:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-steps i{display:block;font:italic 400 34px/1 'Cormorant Garamond',serif;color:#6F756B;margin:0 0 16px}
+#prdDetail .nv .nv-steps b{display:block;font:500 15px/1.5 'Noto Sans KR',sans-serif;color:#262E26;margin:0 0 8px}
+#prdDetail .nv .nv-steps span{display:block;font:400 13.5px/1.8 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-spec{border-top:1px solid #262E26}
+#prdDetail .nv .nv-spec>div{display:grid;grid-template-columns:140px minmax(0,1fr);padding:16px 0;border-bottom:1px solid rgba(38,46,38,.18);font:400 14px/1.75 'Noto Sans KR',sans-serif;color:#3a3f3a}
+#prdDetail .nv .nv-spec b{font-weight:500;color:#262E26}
+#prdDetail .nv .nv-note{margin:22px 0 0;padding:20px 24px;background:#F7F4EE;font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#3a3f3a}
+@media (max-width:760px){
+.nv .nv-cards{grid-template-columns:minmax(0,1fr) !important;gap:40px !important}
+.nv .nv-std{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important}
+.nv .nv-std>div{padding:20px 14px 22px 0 !important;border-left:0 !important}
+.nv .nv-std>div:nth-child(2n){padding-left:14px !important;border-left:1px solid rgba(38,46,38,.18) !important}
+.nv .nv-steps{grid-template-columns:minmax(0,1fr) !important}
+.nv .nv-steps>div{padding:20px 0 22px !important;border-left:0 !important}
+.nv .nv-spec>div{grid-template-columns:96px minmax(0,1fr) !important}
+}
+</style>
+<div class="nv">
+
+<div class="nv-mh">
+<p class="nv-sub">BOTANICAL ORIGIN</p>
+<h2>UV Shield Essence<br>+ Facial Deep Cleanser</h2>
+<p class="nv-lead">제주의 강한 햇빛과 거친 바람을 견디며 자란 원료.<br>유브이 쉴드 에센스 · 페이셜 딥 클렌저, 2가지 제품을 함께 구성했습니다.</p>
+<div class="nv-chips"><span>2 Items</span><span>스퀴저 키트 증정</span><span>Vegan</span></div>
+<div class="nv-tabs"><a href="#nv-items">SET ITEMS</a><a href="#nv-foryou">FOR YOU</a><a href="#nv-std">OUR STANDARDS</a></div>
+</div>
+
+<div class="nv-gift"><div class="nv-media"><img src="https://studionue.cafe24.com/Products/tincase, squeezer/1키트증정(최종).png" alt="스퀴저 키트 증정"></div><div class="nv-lkc"><a class="nv-lk" href="/product/detail.html?product_no=32">스퀴저 키트 보러가기 →</a></div></div>
+
+<div class="nv-sec" id="nv-items">
+<div class="nv-head"><div><span class="nv-eb">SET ITEMS</span><h3>Set Items<span>2가지 제품 구성</span></h3></div><p>각 제품은 개별 상세페이지에서 더 자세히 확인하실 수 있습니다.</p></div>
+<div class="nv-cards" style="--n:2"><div class="nv-card"><div class="nv-media"><img src="https://studionue.cafe24.com/Products/Set/sun.png" alt="UV Shield Essence"></div><h4>UV Shield Essence</h4><h5>유브이 쉴드 에센스 (50ml)</h5><p>번들거림·백탁 없이 산뜻하게, SPF50+ PA++++로 든든하게 지켜주는 UV 에센스</p><a class="nv-lk" href="/product/detail.html?product_no=33">제품 자세히 보기 →</a></div><div class="nv-card"><div class="nv-media"><img src="https://studionue.cafe24.com/Products/Set/clean.png" alt="Facial Deep Cleanser"></div><h4>Facial Deep Cleanser</h4><h5>페이셜 딥 클렌저 (100ml)</h5><p>뽀득거림 없이 촉촉하게, 모공 속 노폐물까지 깨끗하게 씻어내는 마일드 딥 클렌저</p><a class="nv-lk" href="/product/detail.html?product_no=34">제품 자세히 보기 →</a></div></div>
+</div>
+
+<div class="nv-sec" id="nv-foryou">
+<div class="nv-head"><div><span class="nv-eb">FOR YOU</span><h3>Made for your daily routine.<span>이런 분들께 추천해요</span></h3></div><p>세안부터 자외선 차단, 손끝 보습까지. 매일의 루틴을 같은 기준으로 만든 제품으로 채워보세요.</p></div>
+<div class="nv-fy">
+<div><i>01</i><span><b>번들거림·끈적임·백탁 없이</b> 부드럽고 가볍게 발리는 선크림을 찾는 분</span></div>
+<div><i>02</i><span>국내 최고 등급 <b>SPF50+, PA++++</b>의 선크림으로 든든하게 피부를 지키고 싶은 분</span></div>
+<div><i>03</i><span>선크림으로 <b>미백·주름 개선·탄력 케어</b>까지 한번에 챙기고 싶은 분</span></div>
+<div><i>04</i><span>피부 자극이 적은 <b>식물 유래 마일드한 성분</b>의 세안제를 찾는 분</span></div>
+<div><i>05</i><span>세안 후에도 뽀득거리지 않고 <b>촉촉한 수분감</b>을 원하는 분</span></div>
+<div><i>06</i><span>세안제로 <b>모공 속 노폐물과 피지</b>까지 깔끔하게 제거하고 싶은 분</span></div>
+<div><i>07</i><span>남녀노소 안심하고 쓸 수 있는 <b>테스트 검증 + 비건·친환경</b> 화장품을 찾는 분</span></div>
+</div>
+</div>
+
+<div class="nv-sec" id="nv-std">
+<div class="nv-head"><div><span class="nv-eb">OUR STANDARDS</span><h3>One Standard<span>모든 제품에 담은 같은 기준</span></h3></div><p>무엇을 넣을지보다 무엇을 덜어낼지 먼저 고민했습니다. 세트의 모든 제품은 같은 기준을 통과한 처방과 패키지로 만들어집니다.</p></div>
+<div class="nv-std"><div><i>01</i><b>Honest Vegan</b><span>제주 특허 원료 Jeju Active Complex를 담은 비건 처방</span><a class="nv-lk" href="/new/page07-r.html">더 알아보기 →</a></div><div><i>02</i><b>3 Safety Tests</b><span>전 제품 3종 안전성 테스트 완료</span></div><div><i>03</i><b>Clean Formula</b><span>처음 설계부터 12종 유해성분 배제</span></div><div><i>04</i><b>Aluminum Tube</b><span>입구까지 단일 알루미늄으로 만든 튜브</span><a class="nv-lk" href="/new/page08-r.html">더 알아보기 →</a></div></div>
+</div>
+
+<div class="nv-end"></div>
+</div>
+<!-- /nv -->
