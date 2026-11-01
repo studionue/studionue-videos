@@ -1,0 +1,285 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+#prdDetail .nv{--ink:#262E26;--mute:#6F756B;--line:rgba(38,46,38,.18);--stone:#EFEBE3;--paper:#F7F4EE;font-family:'Noto Sans KR',sans-serif;color:#262E26;max-width:860px;margin:0 auto;word-break:keep-all;-webkit-font-smoothing:antialiased;text-align:left}
+#prdDetail .nv *{box-sizing:border-box}
+#prdDetail .nv p{margin:0}
+#prdDetail .nv h2,#prdDetail .nv h3,#prdDetail .nv h4,#prdDetail .nv h5{display:block;width:auto;border:0;padding:0;text-align:left;float:none}
+#prdDetail .nv .nv-eb{display:inline-block;background:#262E26;color:#fff;font:500 11px/1.25 'Noto Sans KR',sans-serif;letter-spacing:.17em;padding:5px 8px 4px;margin:0}
+#prdDetail .nv .nv-ser{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:-.01em;color:#262E26}
+#prdDetail .nv .nv-mh{padding:56px 0 0}
+#prdDetail .nv .nv-mh .nv-sub{font:500 12px/1 'Noto Sans KR',sans-serif;letter-spacing:.22em;color:#6F756B;margin:0 0 14px}
+#prdDetail .nv .nv-mh h2{font:500 56px/1.02 'Cormorant Garamond',serif;margin:0 0 22px;color:#262E26}
+#prdDetail .nv .nv-lead{font:400 15px/1.85 'Noto Sans KR',sans-serif;color:#3d453d;margin:0 0 22px}
+#prdDetail .nv .nv-chips{display:flex;flex-wrap:wrap;gap:8px}
+#prdDetail .nv .nv-chips span{border:1px solid rgba(38,46,38,.22);font:500 12px/1 'Noto Sans KR',sans-serif;letter-spacing:.05em;padding:8px 11px;background:#fff;color:#262E26}
+#prdDetail .nv .nv-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 0;padding:0 0 30px;border-bottom:1px solid rgba(38,46,38,.18)}
+#prdDetail .nv .nv-tabs a{border:1px solid rgba(38,46,38,.35);padding:10px 14px 9px;font:500 11.5px/1.2 'Noto Sans KR',sans-serif;letter-spacing:.12em;color:#262E26;text-decoration:none;background:transparent;white-space:nowrap}
+#prdDetail .nv .nv-tabs a:hover{background:#262E26;color:#fff;border-color:#262E26}
+#prdDetail .nv .nv-media{margin:40px 0 0;background:#EFEBE3;overflow:hidden}
+#prdDetail .nv .nv-media video,#prdDetail .nv .nv-media img{display:block;width:100%;height:auto;margin:0;border:0}
+#prdDetail .nv .nv-sec{padding:96px 0 0}
+#prdDetail .nv .nv-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin:0 0 34px}
+#prdDetail .nv .nv-head h3{font:500 42px/1.08 'Cormorant Garamond',serif;margin:14px 0 0;color:#262E26}
+#prdDetail .nv .nv-head h3 span{display:block;font:500 15px/1.5 'Noto Sans KR',sans-serif;letter-spacing:0;margin-top:10px;color:#3d453d}
+#prdDetail .nv .nv-head p{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-fy{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:48px;border-top:1px solid #262E26}
+#prdDetail .nv .nv-fy div{display:grid;grid-template-columns:44px minmax(0,1fr);padding:17px 0;border-bottom:1px solid rgba(38,46,38,.18);font:400 14.5px/1.7 'Noto Sans KR',sans-serif;color:#3a3f3a}
+#prdDetail .nv .nv-fy i{font:italic 400 22px/1.2 'Cormorant Garamond',serif;color:#6F756B}
+#prdDetail .nv .nv-fy b{font-weight:600;color:#262E26}
+#prdDetail .nv .nv-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+#prdDetail .nv .nv-row .nv-media{margin:0}
+#prdDetail .nv .nv-ttl{font:500 40px/1.1 'Cormorant Garamond',serif;margin:14px 0 6px;color:#262E26}
+#prdDetail .nv .nv-kr{font:500 15px/1.5 'Noto Sans KR',sans-serif;margin:0 0 16px;color:#3d453d}
+#prdDetail .nv .nv-txt{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a;margin:0 0 6px}
+#prdDetail .nv .nv-sub3{display:grid;grid-template-columns:72px minmax(0,1fr);gap:0 18px;align-items:baseline;padding:28px 0 22px;border-top:1px solid #262E26;margin-top:56px}
+#prdDetail .nv .nv-head+.nv-sub3{margin-top:0}
+#prdDetail .nv .nv-sub3 .no{font:italic 400 40px/1 'Cormorant Garamond',serif;color:#6F756B}
+#prdDetail .nv .nv-sub3 h4{font:500 26px/1.15 'Cormorant Garamond',serif;margin:0 0 4px;color:#262E26}
+#prdDetail .nv .nv-sub3 h5{font:500 14.5px/1.5 'Noto Sans KR',sans-serif;margin:0 0 10px;color:#262E26}
+#prdDetail .nv .nv-sub3 p{font:400 14px/1.85 'Noto Sans KR',sans-serif;color:#4a524a}
+#prdDetail .nv .nv-sub3+.nv-media{margin-top:6px}
+#prdDetail .nv .nv-media+.nv-media{margin-top:16px}
+#prdDetail .nv .nv-head+.nv-media{margin-top:0}
+#prdDetail .nv .nv-lk{display:inline-block;margin:20px 0 0;font:500 13px/1.4 'Noto Sans KR',sans-serif;color:#262E26;border-bottom:1px solid #262E26;padding:0 0 4px;text-decoration:none}
+#prdDetail .nv .nv-lks{display:flex;flex-wrap:wrap;gap:8px 28px}
+#prdDetail .nv .nv-end{height:96px}
+@media (max-width:760px){
+.nv .nv-mh{padding:36px 0 0 !important}
+.nv .nv-mh h2{font-size:40px !important}
+.nv .nv-head,.nv .nv-row,.nv .nv-fy{grid-template-columns:minmax(0,1fr) !important;gap:18px !important}
+.nv .nv-fy{column-gap:0 !important;row-gap:0 !important}
+.nv .nv-head h3,.nv .nv-ttl{font-size:32px !important}
+.nv .nv-sec{padding:64px 0 0 !important}
+.nv .nv-tabs{flex-wrap:nowrap !important;overflow-x:auto !important;-webkit-overflow-scrolling:touch}
+.nv .nv-sub3{grid-template-columns:52px minmax(0,1fr) !important;margin-top:40px !important}
+.nv .nv-sub3 .no{font-size:32px !important}
+.nv .nv-end{height:64px !important}
+}
+</style>
+<div class="nv">
+
+<div class="nv-mh">
+<p class="nv-sub">BOTANICAL ORIGIN</p>
+<h2>UV Shield Essence</h2>
+<p class="nv-lead">제주의 강한 자외선과 거친 바람을 견디며 자란 원료.<br>그 땅이 만들어낸 기준으로, 가볍고 투명하게 스며드는 선 에센스를 담았습니다.</p>
+<div class="nv-chips"><span>SPF50+ · PA++++</span><span>미백 · 주름개선 기능성</span><span>Vegan</span><span>Reef Safe</span><span>50ml</span></div>
+<div class="nv-tabs"><a href="#nv-foryou">FOR YOU</a><a href="#nv-texture">01 TEXTURE</a><a href="#nv-formula">02 NUE FORMULA</a><a href="#nv-reef">03 REEF SAFE</a><a href="#nv-sustain">04 SUSTAINABILITY</a></div>
+</div>
+
+<div class="nv-media"><video src="https://raw.githubusercontent.com/studionue/studionue-videos/main/sunscreen main.mp4" autoplay muted loop playsinline></video></div>
+
+<div class="nv-sec" id="nv-foryou">
+<div class="nv-head"><div><span class="nv-eb">FOR YOU</span><h3>Made for your everyday sun.<span>이런 분들께 추천해요</span></h3></div><p>매일 바르는 선크림이기에, 가볍고 투명한 마무리와 피부를 생각한 성분을 함께 담았습니다.</p></div>
+<div class="nv-fy">
+<div><i>01</i><span><b>번들거림·끈적임·백탁 없이</b> 부드럽고 가볍게 발리는 UV Essence를 찾는 분</span></div>
+<div><i>02</i><span><b>투명하게 마무리</b>되어 피부 본연의 자연스러움을 살리고 싶은 분</span></div>
+<div><i>03</i><span>밀림·뭉침 없이 <b>메이크업 베이스</b>로도 활용하고 싶은 분</span></div>
+<div><i>04</i><span><b>미백·주름 개선·탄력 케어</b>까지 한번에 챙기고 싶은 분</span></div>
+<div><i>05</i><span>국내 최고 등급 <b>SPF50+, PA++++</b>로 든든하게 피부를 지키고 싶은 분</span></div>
+<div><i>06</i><span>남녀노소 안심하고 쓸 수 있도록 <b>테스트로 검증된</b> 화장품을 찾는 분</span></div>
+<div><i>07</i><span>지구와 동물을 생각한 <b>친환경·비건</b> 화장품을 선택하고 싶은 분</span></div>
+</div>
+</div>
+
+<div class="nv-sec" id="nv-texture">
+<div class="nv-head"><div><span class="nv-eb">01 · TEXTURE</span><h3>Silky Texture<span>산뜻하게 스며드는 에센스 제형</span></h3></div><p>번들거림·끈적임·백탁 없이 부드럽고 가볍게 발리고, 투명하게 마무리됩니다. 밀림·뭉침이 없어 메이크업 베이스로도 편안하게 쓸 수 있습니다.</p></div>
+<div class="nv-media"><video src="https://raw.githubusercontent.com/studionue/studionue-videos/main/UVshieldVideo.mp4" autoplay muted loop playsinline></video></div>
+</div>
+
+<div class="nv-sec" id="nv-formula">
+<div class="nv-head"><div><span class="nv-eb">02 · NUE FORMULA</span><h3>Nue Formula<span>건강한 피부를 위한 세 가지 원칙</span></h3></div><p>무엇을 넣을지보다 무엇을 덜어낼지 먼저 고민했습니다. 스튜디오뉴의 모든 제품은 이 세 가지 기준을 통과한 처방으로 만들어집니다.</p></div>
+
+<div class="nv-sub3"><span class="no">01</span><div><h4>Honest Vegan</h4><h5>정직하게 선별한 비건 원료</h5><p>제주 특허 원료 Jeju Active Complex를 비롯해, 피부를 생각한 식물성 원료만을 골라 담았습니다.</p><a class="nv-lk" href="/new/page07.html">Jeju Active Complex 더 알아보기 →</a></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/UV Shiled/★★선크림 비건원료(최종).png" alt="비건 원료"></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/UV Shiled/★★제주 특허원료(최종).png" alt="제주 특허 원료"></div>
+<div class="nv-media"><video src="https://raw.githubusercontent.com/studionue/studionue-videos/main/synergy.mp4" autoplay muted loop playsinline></video></div>
+
+<div class="nv-sub3"><span class="no">02</span><div><h4>Functional Care</h4><h5>기능성 성분 함유</h5><p>식약처 기능성 고시 원료인 아데노신(주름개선)과 나이아신아마이드(미백)를 담아, 바를수록 피부 탄력과 피부 빛을 함께 챙깁니다.</p></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/UV Shiled/2종 기능성 성분(최종).png" alt="2종 기능성 성분"></div>
+<div class="nv-media"><video src="https://raw.githubusercontent.com/studionue/studionue-videos/main/FunctionalIngredients.mp4" autoplay muted loop playsinline></video></div>
+
+<div class="nv-sub3"><span class="no">03</span><div><h4>Tested &amp; Clean</h4><h5>안전성 테스트 및 유해성분 배제</h5><p>누구나 안심하고 사용할 수 있도록 3종 안전성 테스트를 완료했고, 처음 설계부터 12종 유해성분을 배제했습니다.</p><div class="nv-lks"><a class="nv-lk" href="/new/page11-01.html">시험성적서 보기 (3종 테스트) →</a><a class="nv-lk" href="/new/page12-01.html">유해성분 자세히 보기 →</a></div></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/UV Shiled/★선크림 안전성 테스트(최종).png" alt="3종 안전성 테스트"></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/UV Shiled/선크림 12종(최종).png" alt="12종 유해성분 제외"></div>
+</div>
+
+<div class="nv-sec" id="nv-reef">
+<div class="nv-head"><div><span class="nv-eb">03 · REEF SAFE</span><h3>Reef Safe<span>산호초 생태계 보호</span></h3></div><p>바다 생태계에 부담을 주지 않도록, 산호초에 영향을 줄 수 있는 자외선 차단 성분 3종(에칠헥실메톡시신나메이트·벤조페논-3·부틸메톡시디벤조일메탄)을 넣지 않았습니다.</p></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/UV Shiled/Reef Safe(최종).png" alt="Reef Safe"></div>
+</div>
+
+<div class="nv-sec" id="nv-sustain">
+<div class="nv-head"><div><span class="nv-eb">04 · SUSTAINABILITY</span><h3>Sustainability<span>끝까지 남김없이</span></h3></div><p>튜브부터 상자, 인쇄 잉크까지. 다 쓰고 난 뒤의 모습까지 생각해 패키지를 만들었습니다.</p></div>
+
+<div class="nv-sub3"><span class="no">01</span><div><h4>Single Aluminum Tube</h4><h5>단일 알루미늄 튜브</h5><p>순도 높은 재활용을 위해 입구까지 단일 알루미늄으로 제작했습니다. 빛과 공기를 막아 내용물을 지키고, 필요한 양만 짜서 쓸 수 있습니다.</p><a class="nv-lk" href="/new/page08.html">알루미늄 튜브를 선택한 이유 →</a></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/UV Shiled/선크림 튜브(최종).png" alt="단일 알루미늄 튜브"></div>
+
+<div class="nv-sub3"><span class="no">02</span><div><h4>Reusable Box</h4><h5>재사용이 가능한 패키징</h5><p>2차 포장 박스는 리무버블 스티커를 떼어 필통이나 수납함으로 다시 쓸 수 있습니다. 합성수지나 코팅 없이 제작해 분리배출 시에는 종이류로 재활용됩니다.</p></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/UV Shiled/2차포장박스(최종).png" alt="재사용 가능한 패키징"></div>
+
+<div class="nv-sub3"><span class="no">03</span><div><h4>FSC Paper &amp; Soy Ink</h4><h5>FSC 인증 종이 + Soy Ink</h5><p>지속 가능하게 관리된 산림에서 생산한 FSC 인증 종이와, 석유계 잉크보다 유해물질이 적은 대두 기반 Soy Ink로 인쇄했습니다.</p></div></div>
+<div class="nv-media"><img src="https://studionue.cafe24.com/Products/UV Shiled/FSC SoyInk(최종).png" alt="FSC 인증 종이와 Soy Ink"></div>
+</div>
+
+<div class="nv-end"></div>
+</div>
+<!-- /nv -->
+
+
+<style>
+	.sn-notice {
+		font-family: 'Noto Sans KR', -apple-system, sans-serif; max-width: 860px; margin: 0 auto; color: #1a1a1a;
+	}
+	/* 섹션 타이틀 */
+	
+	.sn-section-title {
+		font-size: 14px; font-weight: 700; color: #3a5a40; letter-spacing: 0.1em; text-align: center; padding: 6px 24px; margin: 24px auto 18px; display: table; background-color: #e8f5f0; border-radius: 50px;
+	}
+	/* 전성분 영역 */
+	
+	.sn-ing-area {
+		padding: 0 0 12px; border-bottom: 1px solid #e8e8e8;
+	}
+	
+	.sn-ing-label {
+		font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: #5a7a6a; margin-bottom: 12px; padding-left: 8px;
+	}
+	/* 범례 */
+	
+	.sn-legend {
+		display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 12px 16px; background: #f8f8f6; border-radius: 6px 6px 0 0; border: 1px solid #d8d8d0; border-bottom: none;
+	}
+	
+	.sn-li {
+		display: flex; align-items: center; gap: 6px; font-size: 13px; color: #555; white-space: nowrap;
+	}
+	
+	.sn-dot {
+		width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+	}
+	
+	.sn-jeju-swatch {
+		width: 24px; height: 11px; background: #fff0e0; border: 0.5px solid #e8b87a; border-radius: 2px; flex-shrink: 0;
+	}
+	
+	.sn-div {
+		width: 0.5px; height: 14px; background: #c8c8c0; align-self: center;
+	}
+	/* 전성분 박스 */
+	
+	.sn-ing-box {
+		padding: 18px 20px; border: 1px solid #d8d8d0; border-radius: 0 0 6px 6px; background: #ffffff; line-height: 2.2; font-size: 13px; color: #5a5a5a;
+	}
+	/* 카테고리 색상 */
+	
+	.ci-moist {
+		color: #1155CC; font-weight: 500;
+	}
+	
+	.ci-barrier {
+		color: #1a7a34; font-weight: 500;
+	}
+	
+	.ci-white {
+		color: #c00000; font-weight: 500;
+	}
+	
+	.ci-wrinkle {
+		color: #7B3F00; font-weight: 500;
+	}
+	
+	.ci-uv {
+		color: #6600cc; font-weight: 500;
+	}
+	
+	.ci-sooth {
+		color: #006666; font-weight: 500;
+	}
+	
+	.ci-base {
+		color: #5a5a5a;
+	}
+	
+	.jeju {
+		background-color: #fff0e0; border-radius: 3px; padding: 1px 5px 1px 4px;
+	}
+	
+	.sep {
+		color: #cccccc; margin: 0 1px;
+	}
+	/* 정보 테이블 */
+	
+	.sn-table {
+		width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; border: 1px solid #d8d8d0; border-radius: 6px; overflow: hidden;
+	}
+	
+	.sn-table th,
+	.sn-table td {
+		padding: 13px 15px; border: none; border-bottom: 1px solid #d8d8d0; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;
+	}
+	
+	.sn-table tr:last-child th,
+	.sn-table tr:last-child td {
+		border-bottom: none;
+	}
+	
+	.sn-table th {
+		background: #f6f7f9; color: #555; width: 31%; border-right: 1px solid #d8d8d0;
+	}
+	
+	.sn-table td {
+		color: #1a1a1a;
+	}
+	
+	.sn-ing-guide {
+		font-size: 11px; color: #888; letter-spacing: 0.03em; margin-top: 2px; margin-bottom: 2; padding-left: 2px;
+	}
+
+</style>
+
+
+<div fr-original-class="sn-notice" fr-original-style="" style='font-family: "Noto Sans KR", -apple-system, sans-serif; max-width: 860px; margin: 0px auto; color: rgb(26, 26, 26);'>
+
+<p fr-original-class="sn-section-title" fr-original-style="" style="font-size: 14px; font-weight: 700; color: rgb(58, 90, 64); letter-spacing: 0.1em; text-align: center; padding: 6px 24px; margin: 24px auto 18px; display: table; background-color: rgb(232, 245, 240); border-radius: 50px;">상품정보 제공고시</p>
+
+<div fr-original-class="sn-ing-area" fr-original-style="" style="padding: 0px 0px 12px; border-bottom: 1px solid rgb(232, 232, 232);">
+
+<p fr-original-class="sn-ing-label" fr-original-style="" style="font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: rgb(90, 122, 106); margin-bottom: 12px; padding-left: 8px;">화장품법에 따라 기재해야 하는 모든 성분</p>
+<div fr-original-class="sn-legend" fr-original-style="" style="display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 12px 16px; border-radius: 6px 6px 0px 0px; border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(216, 216, 208) rgb(216, 216, 208) currentcolor; border-image: none;">
+<div fr-original-class="sn-li" fr-original-style="" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgb(85, 85, 85); white-space: nowrap;"><span style="background: rgb(17, 85, 204); width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;" fr-original-style="background:#1155CC;" fr-original-class="sn-dot"></span>수분·보습</div>
+<div fr-original-class="sn-li" fr-original-style="" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgb(85, 85, 85); white-space: nowrap;"><span style="background: rgb(26, 122, 52); width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;" fr-original-style="background:#1a7a34;" fr-original-class="sn-dot"></span>피부장벽·에몰리언트</div>
+<div fr-original-class="sn-li" fr-original-style="" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgb(85, 85, 85); white-space: nowrap;"><span style="background: rgb(192, 0, 0); width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;" fr-original-style="background:#c00000;" fr-original-class="sn-dot"></span>미백</div>
+<div fr-original-class="sn-li" fr-original-style="" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgb(85, 85, 85); white-space: nowrap;"><span style="background: rgb(123, 63, 0); width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;" fr-original-style="background:#7B3F00;" fr-original-class="sn-dot"></span>주름개선</div>
+<div fr-original-class="sn-li" fr-original-style="" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgb(85, 85, 85); white-space: nowrap;"><span style="background: rgb(102, 0, 204); width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;" fr-original-style="background:#6600cc;" fr-original-class="sn-dot"></span>자외선 차단</div>
+<div fr-original-class="sn-li" fr-original-style="" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgb(85, 85, 85); white-space: nowrap;"><span style="background: rgb(0, 102, 102); width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;" fr-original-style="background:#006666;" fr-original-class="sn-dot"></span>진정·항산화</div>
+<div fr-original-class="sn-li" fr-original-style="" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgb(85, 85, 85); white-space: nowrap;"><span style="background: rgb(90, 90, 90); width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;" fr-original-style="background:#5a5a5a;" fr-original-class="sn-dot"></span>기제·기타</div>
+<div fr-original-style="" fr-original-class="sn-div" style="width: 0.5px; height: 14px; align-self: center;"></div>
+<div fr-original-class="sn-li" fr-original-style="" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgb(85, 85, 85); white-space: nowrap;"><span fr-original-style="" fr-original-class="sn-jeju-swatch" style="width: 24px; height: 11px; background: rgb(255, 240, 224); border: 0.5px solid rgb(232, 184, 122); border-radius: 2px; flex-shrink: 0;"></span>제주 원료</div>
+</div>
+<div fr-original-class="sn-ing-box" fr-original-style="" style="padding: 18px 20px; border: 1px solid rgb(216, 216, 208); border-radius: 0px 0px 6px 6px; line-height: 2.2; font-size: 13px; color: rgb(90, 90, 90);">
+<span fr-original-class="ci-base" fr-original-style="" style="color: rgb(90, 90, 90);">정제수</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">다이부틸아디페이트</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-moist" fr-original-style="" style="color: rgb(17, 85, 204); font-weight: 500;">2,3-부탄다이올</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-uv" fr-original-style="" style="color: rgb(102, 0, 204); font-weight: 500;">에칠헥실트리아존</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-uv" fr-original-style="" style="color: rgb(102, 0, 204); font-weight: 500;">디에칠아미노하이드록시벤조일헥실벤조에이트</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-white" fr-original-style="" style="color: rgb(192, 0, 0); font-weight: 500;">나이아신아마이드</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-uv" fr-original-style="" style="color: rgb(102, 0, 204); font-weight: 500;">드로메트리졸트리실록산</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-uv" fr-original-style="" style="color: rgb(102, 0, 204); font-weight: 500;">테레프탈릴리덴디캠퍼설포닉애씨드</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-moist" fr-original-style="" style="color: rgb(17, 85, 204); font-weight: 500;">1,2-헥산다이올</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">다이아이소프로필세바케이트</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">카프릴릴메티콘</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">베헤닐알코올</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">아라키딜알코올</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-uv" fr-original-style="" style="color: rgb(102, 0, 204); font-weight: 500;">디에칠헥실부타미도트리아존</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">비닐다이메티콘</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-base" fr-original-style="" style="color: rgb(90, 90, 90);">트라이메틸펜탄다이올/아디픽애씨드/글리세린크로스폴리머</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-sooth jeju" fr-original-style="" style="color: rgb(0, 102, 102); font-weight: 500; background-color: rgb(255, 240, 224); border-radius: 3px; padding: 1px 5px 1px 4px;">녹차수</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-moist" fr-original-style="" style="color: rgb(17, 85, 204); font-weight: 500;">판테놀</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-wrinkle" fr-original-style="" style="color: rgb(123, 63, 0); font-weight: 500;">아데노신</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-sooth jeju" fr-original-style="" style="color: rgb(0, 102, 102); font-weight: 500; background-color: rgb(255, 240, 224); border-radius: 3px; padding: 1px 5px 1px 4px;">자주천인국추출물</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-moist jeju" fr-original-style="" style="color: rgb(17, 85, 204); font-weight: 500; background-color: rgb(255, 240, 224); border-radius: 3px; padding: 1px 5px 1px 4px;">조씨추출물</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-sooth jeju" fr-original-style="" style="color: rgb(0, 102, 102); font-weight: 500; background-color: rgb(255, 240, 224); border-radius: 3px; padding: 1px 5px 1px 4px;">알로에베라잎추출물</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-sooth jeju" fr-original-style="" style="color: rgb(0, 102, 102); font-weight: 500; background-color: rgb(255, 240, 224); border-radius: 3px; padding: 1px 5px 1px 4px;">녹차추출물</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-moist jeju" fr-original-style="" style="color: rgb(17, 85, 204); font-weight: 500; background-color: rgb(255, 240, 224); border-radius: 3px; padding: 1px 5px 1px 4px;">코치닐선인장열매추출물</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-sooth jeju" fr-original-style="" style="color: rgb(0, 102, 102); font-weight: 500; background-color: rgb(255, 240, 224); border-radius: 3px; padding: 1px 5px 1px 4px;">병풀추출물</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-white jeju" fr-original-style="" style="color: rgb(192, 0, 0); font-weight: 500; background-color: rgb(255, 240, 224); border-radius: 3px; padding: 1px 5px 1px 4px;">쌀추출물</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-sooth" fr-original-style="" style="color: rgb(0, 102, 102); font-weight: 500;">알란토인</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-base" fr-original-style="" style="color: rgb(90, 90, 90);">트로메타민</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-base" fr-original-style="" style="color: rgb(90, 90, 90);">아이소도데케인</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">트라이메틸실록시실리케이트</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">아라키딜글루코사이드</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">세테아릴알코올</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-base" fr-original-style="" style="color: rgb(90, 90, 90);">폴리아크릴레이트크로스폴리머-6</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">소듐스테아로일글루타메이트</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-base" fr-original-style="" style="color: rgb(90, 90, 90);">소듐폴리아크릴로일다이메틸타우레이트</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">C30-45알킬세테아릴다이메티콘크로스폴리머</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">스테아릴알코올</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-base" fr-original-style="" style="color: rgb(90, 90, 90);">향료</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-base" fr-original-style="" style="color: rgb(90, 90, 90);">페녹시에탄올</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-barrier" fr-original-style="" style="color: rgb(26, 122, 52); font-weight: 500;">비닐다이메티콘/메티콘실세스퀴옥세인크로스폴리머</span><span fr-original-class="sep" fr-original-style="" style="color: rgb(204, 204, 204); margin: 0px 1px;">, </span><span fr-original-class="ci-base" fr-original-style="" style="color: rgb(90, 90, 90);">에틸헥실글리세린</span>
+<br>
+
+<p fr-original-class="sn-ing-guide" fr-original-style="" style="font-size: 11px; color: rgb(136, 136, 136); letter-spacing: 0.03em; margin-top: 2px; padding-left: 2px;">※ 각 성분별 기능을 카테고리별로 확인해보세요.</p>
+</div>
+</div>
+
+<table fr-original-class="sn-table" fr-original-style="" style="width: 100%; border-collapse: separate; border-spacing: 0px; table-layout: fixed; border: 1px solid rgb(216, 216, 208); border-radius: 6px; overflow: hidden;"><tbody><tr><th fr-original-style="" style="background: rgb(246, 247, 249); color: rgb(85, 85, 85); width: 31%; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); padding: 13px 15px; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">내용물의 용량 또는 중량</th>
+<td fr-original-style="" style="color: rgb(26, 26, 26); padding: 13px 15px; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">50ml</td></tr>
+<tr><th fr-original-style="" style="background: rgb(246, 247, 249); color: rgb(85, 85, 85); width: 31%; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); padding: 13px 15px; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">제품 주요 사양</th>
+<td fr-original-style="" style="color: rgb(26, 26, 26); padding: 13px 15px; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">모든 피부 타입</td></tr>
+<tr><th fr-original-style="" style="background: rgb(246, 247, 249); color: rgb(85, 85, 85); width: 31%; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); padding: 13px 15px; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">사용기한(또는 개봉 후 사용기간)</th>
+<td fr-original-style="" style="color: rgb(26, 26, 26); padding: 13px 15px; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">제조일로부터 36개월, 개봉 후 12개월</td></tr>
+<tr><th fr-original-style="" style="background: rgb(246, 247, 249); color: rgb(85, 85, 85); width: 31%; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); padding: 13px 15px; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">사용방법</th>
+<td fr-original-style="" style="color: rgb(26, 26, 26); padding: 13px 15px; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">스킨케어의 마지막 단계에서 얼굴과 목에 적당량을 덜어 부드럽게 펴 발라 흡수시켜 주세요.</td></tr>
+<tr><th fr-original-style="" style="background: rgb(246, 247, 249); color: rgb(85, 85, 85); width: 31%; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); padding: 13px 15px; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">화장품제조업자, 화장품책임판매업자 및 맞춤형화장품판매업자</th>
+<td fr-original-style="" style="color: rgb(26, 26, 26); padding: 13px 15px; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">화장품책임판매업자 : 스튜디오뉴 유한회사 / 화장품제조업자 : 유씨엘(주)</td></tr>
+<tr><th fr-original-style="" style="background: rgb(246, 247, 249); color: rgb(85, 85, 85); width: 31%; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); padding: 13px 15px; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">제조국</th>
+<td fr-original-style="" style="color: rgb(26, 26, 26); padding: 13px 15px; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">대한민국</td></tr>
+<tr><th fr-original-style="" style="background: rgb(246, 247, 249); color: rgb(85, 85, 85); width: 31%; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); padding: 13px 15px; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">기능성 화장품 식품의약품안전처 심사필 여부</th>
+<td fr-original-style="" style="color: rgb(26, 26, 26); padding: 13px 15px; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">화장품법에 따른 기능성 화장품 심사(또는 보고)를 필함</td></tr>
+<tr><th fr-original-style="" style="background: rgb(246, 247, 249); color: rgb(85, 85, 85); width: 31%; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); padding: 13px 15px; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">사용할 때의 주의사항</th>
+<td fr-original-style="" style="color: rgb(26, 26, 26); padding: 13px 15px; border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(216, 216, 208); border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">1) 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우에는 전문의 등과 상담할 것 2) 상처가 있는 부위 등에는 사용을 자제할 것 3) 보관 및 취급 시의 주의사항 가) 어린이의 손이 닿지 않는 곳에 보관할 것 나) 직사광선을 피해서 보관할 것</td></tr>
+<tr><th fr-original-style="" style="background: rgb(246, 247, 249); color: rgb(85, 85, 85); width: 31%; border-width: medium; border-style: none; border-color: currentcolor; padding: 13px 15px; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">품질보증기준</th>
+<td fr-original-style="" style="color: rgb(26, 26, 26); padding: 13px 15px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;">본 제품에 이상이 있을 경우 공정거래위원회 고시 '소비자 분쟁 해결 기준'에 의거 보상해 드립니다.</td></tr></tbody></table>
+</div>
