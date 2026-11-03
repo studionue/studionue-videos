@@ -1,0 +1,50 @@
+<!-- NUE EVENT CARDS (261103 C) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;display=swap">
+<style id="nue-ev-css">
+.nue-ev{max-width:1440px;margin:0 auto;padding:110px 43px 30px;box-sizing:border-box;color:#262E26;font-family:'Pretendard','Noto Sans KR',sans-serif;word-break:keep-all}
+.nue-ev *{box-sizing:border-box}
+.nue-ev .ev-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin:0 0 34px}
+.nue-ev .ev-eb{display:block;font:600 11px/1 'Pretendard','Noto Sans KR',sans-serif;letter-spacing:.24em;color:#8a9a8c}
+.nue-ev .ev-ttl{font:500 46px/1.05 'Cormorant Garamond',serif;margin:12px 0 0;color:#262E26;letter-spacing:0}
+.nue-ev .ev-sub{font:400 14px/1.7 'Pretendard','Noto Sans KR',sans-serif;color:#666;margin:0;text-align:right}
+.nue-ev .ev-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.nue-ev .ev-card{display:block;position:relative;overflow:hidden;background:#F4F0E8;border-radius:16px;padding:30px 28px 26px;aspect-ratio:1/1;text-decoration:none;color:#262E26;transition:background .4s}
+.nue-ev .ev-card:hover{background:#ECE6DA}
+.nue-ev .ev-top{display:flex;justify-content:space-between;gap:10px;font:600 11px/1.2 'Pretendard','Noto Sans KR',sans-serif;letter-spacing:.22em;color:#8a9a8c}
+.nue-ev .ev-big{font:500 110px/.9 'Cormorant Garamond',serif;margin:38px 0 18px;letter-spacing:-.02em;white-space:nowrap;font-variant-numeric:lining-nums;color:#262E26}
+.nue-ev .ev-big small{font:500 34px/1 'Cormorant Garamond','Pretendard','Noto Sans KR',serif;margin-left:6px;letter-spacing:0}
+.nue-ev .ev-nm{font:italic 500 26px/1.2 'Cormorant Garamond',serif;color:#5a7a6a}
+.nue-ev .ev-ds{font:400 14px/1.5 'Pretendard','Noto Sans KR',sans-serif;color:#555;margin-top:6px}
+.nue-ev .ev-ph{position:absolute;right:-30px;bottom:-30px;width:190px;height:190px;border-radius:50%;overflow:hidden;border:6px solid #F4F0E8;transition:border-color .4s}
+.nue-ev .ev-card:hover .ev-ph{border-color:#ECE6DA}
+.nue-ev .ev-ph img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.nue-ev .ev-card:hover .ev-ph img{transform:scale(1.05)}
+.nue-ev .ev-cta{position:absolute;left:28px;bottom:28px;font:600 13px/1.4 'Pretendard','Noto Sans KR',sans-serif;color:#262E26;border-bottom:1px solid #262E26;padding:0 0 3px;white-space:nowrap}
+@media (max-width:1180px){.nue-ev .ev-big{font-size:86px;margin:30px 0 14px}.nue-ev .ev-ph{width:160px;height:160px}}
+@media (max-width:1024px){.nue-ev{padding:80px 20px 20px}.nue-ev .ev-ttl{font-size:38px}.nue-ev .ev-grid{gap:14px}.nue-ev .ev-card{padding:24px 20px 20px}.nue-ev .ev-big{font-size:62px;margin:24px 0 12px}.nue-ev .ev-big small{font-size:24px}.nue-ev .ev-nm{font-size:22px}.nue-ev .ev-ds{font-size:13px}.nue-ev .ev-ph{width:130px;height:130px;right:-24px;bottom:-24px}.nue-ev .ev-cta{left:20px;bottom:20px;font-size:12px}}
+@media (max-width:760px){
+.nue-ev{padding:56px 16px 8px}
+.nue-ev .ev-hd{display:block;margin:0 0 20px}
+.nue-ev .ev-ttl{font-size:32px}
+.nue-ev .ev-sub{text-align:left;margin-top:10px;font-size:13px}
+.nue-ev .ev-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.nue-ev .ev-card{padding:clamp(11px,3.6vw,14px) 13px 12px;border-radius:12px}
+.nue-ev .ev-top{font-size:9px;letter-spacing:.16em}
+.nue-ev .ev-top span+span{display:none}
+.nue-ev .ev-big{font-size:clamp(28px,10vw,46px);margin:clamp(8px,3.6vw,14px) 0 clamp(5px,2vw,8px);letter-spacing:-.025em}
+.nue-ev .ev-big small{font-size:clamp(14px,4vw,18px);margin-left:3px}
+.nue-ev .ev-nm{font-size:clamp(14px,4.4vw,17px)}
+.nue-ev .ev-ds{font-size:clamp(10.5px,3vw,11.5px);margin-top:2px}
+.nue-ev .ev-ph{width:clamp(64px,20vw,84px);height:clamp(64px,20vw,84px);right:-16px;bottom:-16px;border-width:4px}
+.nue-ev .ev-cta{left:13px;bottom:clamp(9px,3vw,12px);font-size:clamp(10px,2.9vw,11px);padding-bottom:2px}
+}
+</style>
+<section class="nue-ev" aria-label="Studio Nue member benefits">
+<div class="ev-hd"><div><span class="ev-eb">MEMBER BENEFITS</span><h2 class="ev-ttl">For Our Members</h2></div><p class="ev-sub">스튜디오뉴 회원이 되어<br>세 가지 혜택을 만나보세요.</p></div>
+<div class="ev-grid">
+<a class="ev-card" href="/member/join.html"><div class="ev-top"><span>EVENT 01</span><span>MEMBERS ONLY</span></div><div class="ev-big">3,000<small>원</small></div><div class="ev-nm">Welcome</div><div class="ev-ds">신규 가입 시 쿠폰</div><div class="ev-ph"><img src="https://raw.githubusercontent.com/studionue/studionue-videos/main/pdp/fx/ev_c1.jpg" alt="" width="480" height="480" loading="lazy"></div><span class="ev-cta">회원가입 →</span></a>
+<a class="ev-card" href="/member/join.html"><div class="ev-top"><span>EVENT 02</span><span>MEMBERS ONLY</span></div><div class="ev-big">5<small>%</small></div><div class="ev-nm">Membership</div><div class="ev-ds">구매 금액 적립</div><div class="ev-ph"><img src="https://raw.githubusercontent.com/studionue/studionue-videos/main/pdp/fx/ev_c2.jpg" alt="" width="480" height="480" loading="lazy"></div><span class="ev-cta">회원가입 →</span></a>
+<a class="ev-card" href="/board/review/list.html?board_no=4"><div class="ev-top"><span>EVENT 03</span><span>MEMBERS ONLY</span></div><div class="ev-big">2,000<small>원</small></div><div class="ev-nm">Review</div><div class="ev-ds">리뷰 작성 시 적립</div><div class="ev-ph"><img src="https://raw.githubusercontent.com/studionue/studionue-videos/main/pdp/fx/ev_c3.jpg" alt="" width="480" height="480" loading="lazy"></div><span class="ev-cta">리뷰 쓰러 가기 →</span></a>
+</div>
+</section>
+<!-- /NUE EVENT CARDS -->
