@@ -1,0 +1,391 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style id="nvov10">.nue-rn .nvcrop.nvc-rep{position:relative}.nue-rn .nvcrop img.nvov{position:absolute;height:auto !important;max-width:none !important;border-radius:6px;box-shadow:0 10px 26px rgba(38,46,38,.30),0 0 0 1px rgba(38,46,38,.16);z-index:2;background:#fff}</style>
+<style id="nvzoom9">.nue-rn .n-frame{position:relative}.nue-rn .n-doc:has(.nv-zoom){padding-bottom:30px}.nue-rn .nv-zoom{position:absolute;bottom:-24px;width:min(64%,560px);background:#fff;border:1px solid rgba(38,46,38,.14);border-radius:12px;box-shadow:0 14px 34px rgba(38,46,38,.18);padding:12px;z-index:2}.nue-rn .nv-zoom.l{left:-22px}.nue-rn .nv-zoom.r{right:-22px;width:min(52%,460px)}.nue-rn .nv-zoom img{display:block;width:100%;height:auto;border-radius:4px}.nue-rn .nv-zoom .ic{position:absolute;top:-14px;width:30px;height:30px;border-radius:50%;background:#262E26;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.15)}.nue-rn .nv-zoom.l .ic{left:-12px}.nue-rn .nv-zoom.r .ic{right:-12px}@media (max-width:760px){.nue-rn .nv-zoom,.nue-rn .nv-zoom.r{position:relative;left:auto !important;right:auto !important;bottom:auto;width:92% !important;margin:-26px auto 0}.nue-rn .n-doc:has(.nv-zoom){padding-bottom:0}}</style>
+<style id="nvlp9">.nue-rn .n-quote .q{display:inline-block;text-align:left}.nue-rn .n-pat{max-width:680px;margin-left:auto;margin-right:auto}.nue-rn .n-doc .n-frame{max-width:80%;margin-left:auto;margin-right:auto}.nue-rn .n-doc .k.k1{grid-template-columns:minmax(0,1fr)}.nue-rn .nvc-x12{aspect-ratio:2000/1610 !important}.nue-rn .n-doc .n-frame:has(.nvc-x12){max-width:720px}.nue-rn .n-alu{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,3.5vw,56px);align-items:start}.nue-rn .n-alu .n-wide{max-width:none !important;margin:0 !important}.nue-rn .n-alu .n-wide img{border-radius:12px}.nue-rn .n-alu .n-list>div:first-child{padding-top:4px}@media (max-width:760px){.nue-rn .n-tabs{flex-wrap:wrap !important;overflow:visible !important;padding-right:0 !important;margin-right:0 !important;gap:6px}.nue-rn .n-doc .n-frame{max-width:100%}.nue-rn .n-alu{grid-template-columns:minmax(0,1fr)}.nue-rn .n-alu .n-wide{max-width:320px !important;margin:0 auto !important}}</style>
+<style id="nvcrop8">.nvcrop{overflow:hidden;width:100%}.nvcrop img{display:block;width:100%!important;max-width:none!important;height:auto!important}.nvc-rep{aspect-ratio:2000/1420}.nvc-rep img{margin-top:-24.5%!important}.nvc-x12{aspect-ratio:2000/1740}.nvc-x12 img{margin-top:-12.5%!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet"/>
+<style id="nue-rn-css">
+/* Studio Nue · About Us / Magazine renewal (2026-11-01) */
+.nue-rn{--n-stone:#EFEBE3;--n-paper:#F7F4EE;--n-ink:#262E26;--n-mute:#6F756B;--n-line:rgba(38,46,38,.18);--n-pad:clamp(20px,6.2vw,89px);--n-cg:'Cormorant Garamond',serif;--n-pr:Pretendard,'Noto Sans KR',sans-serif;background:var(--n-paper);color:var(--n-ink);font-family:var(--n-pr);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-x:clip}
+.nue-rn *{box-sizing:border-box}
+.nue-rn img,.nue-rn video{display:block;width:100%;height:100%;object-fit:cover;max-width:none}
+.nue-rn a{text-decoration:none}
+.nue-rn h1,.nue-rn h2,.nue-rn h3,.nue-rn p,.nue-rn blockquote,.nue-rn ul{margin:0;padding:0}
+.nue-rn .n-eb{display:inline-block;align-self:flex-start;background:#fff;color:var(--n-ink);font:500 clamp(10px,.95vw,13px)/1.25 var(--n-pr);letter-spacing:.17em;padding:4px calc(7px - .17em) 3px 7px}
+.nue-rn .n-eb.d{background:var(--n-ink);color:#fff}
+.nue-rn .n-ser{font-family:var(--n-cg);font-weight:500;letter-spacing:-.015em}
+.nue-rn .n-btn{display:inline-block;border-bottom:1px solid currentColor;padding-bottom:5px;font:500 14px var(--n-pr);color:var(--n-ink)}
+
+/* page wrapper : full width */
+body:has(.nue-rn) #contents{max-width:none!important;width:auto!important;margin:0!important;padding:0!important}
+body:has(.nue-rn) #container{padding-top:0!important}
+
+/* hero */
+.nue-rn .n-hero{position:relative;height:min(100vh,860px);min-height:560px;color:#fff;overflow:hidden;background:#1d241d}
+.nue-rn .n-hero.sub{height:min(80vh,720px);min-height:520px}
+.nue-rn .n-hero>img{position:absolute;inset:0}
+.nue-rn .n-hero:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,24,18,.38),rgba(18,24,18,0) 32%),linear-gradient(90deg,rgba(18,24,18,.55),rgba(18,24,18,.15) 55%,rgba(18,24,18,0)),linear-gradient(0deg,rgba(18,24,18,.35),rgba(18,24,18,0) 40%)}
+.nue-rn .n-hero .tx{position:absolute;left:var(--n-pad);bottom:clamp(100px,13vh,140px);z-index:2;max-width:680px}
+.nue-rn .n-hero h1{font-size:clamp(40px,5.2vw,82px);line-height:1.04;margin:clamp(14px,1.6vw,22px) 0;font-weight:500;color:#fff}
+.nue-rn .n-hero p{font:400 clamp(14px,1.25vw,18px)/1.75 var(--n-pr);opacity:.95;text-shadow:0 1px 10px rgba(0,0,0,.35);color:#fff}
+.nue-rn .n-scroll{position:absolute;right:var(--n-pad);bottom:clamp(100px,13vh,140px);z-index:2;font:500 11px var(--n-pr);letter-spacing:.24em;writing-mode:vertical-rl;opacity:.85;color:#fff}
+
+/* overlay header on hero pages */
+body:has(.nue-ov) #top_warp{position:relative;z-index:30}
+.nue-ov .n-hero{margin-top:calc(-1 * var(--nue-hd,155px))}
+@media (min-width:1025px){
+ body:has(.nue-ov) #top_warp .top_menu_fixed:not(.fixed_on) :is(.top_warp_inner,.top_categoryArea,.top_menuArea){background:transparent!important;border-color:transparent!important}
+ body:has(.nue-ov) #top_warp .top_menu_fixed:not(.fixed_on) .top_warp_inner a:not(.basket_count):not(.list_menu_sub a){color:#fff!important}
+ body:has(.nue-ov) #top_warp .top_menu_fixed:not(.fixed_on) :is(.top_logo img,.search_click img){filter:brightness(0) invert(1)!important}
+ body:has(.nue-ov) #top_warp .top_menu_fixed:not(.fixed_on) :is(.mypage_img,.basket_img){filter:invert(1) brightness(2)!important}
+ body:has(.nue-ov) #top_warp .top_menu_fixed:not(.fixed_on) .top_categoryArea{opacity:1!important}
+ body:has(.nue-ov) #top_warp .top_menu_fixed:not(.fixed_on) .list_menu.list_under>a::before{background-color:#fff!important}
+ body:has(.nue-ov) #top_warp .top_menu_fixed:not(.fixed_on) .joins_point{filter:none}
+}
+@media (max-width:1024px){
+ .nue-ov .n-hero{margin-top:calc(-1 * var(--nue-hd,65px))}
+ body:has(.nue-ov) #top_warp .top_menu_fixed:not(.fixed_on) .top_layout_m{background:transparent!important;border-bottom-color:transparent!important}
+ body:has(.nue-ov) #top_warp .top_menu_fixed:not(.fixed_on) .top_layout_m .top_logo_area :is(.top_logo_left,.top_logo,.top_logo_right){filter:brightness(0) invert(1)}
+}
+
+/* sub navigation tabs (B) */
+.nue-rn .n-tabs{display:flex;gap:10px;flex-wrap:wrap}
+.nue-rn .n-tabs a{display:inline-block;border:1px solid rgba(38,46,38,.35);padding:11px 18px 10px;font:500 12.5px/1.2 var(--n-pr);letter-spacing:.12em;color:var(--n-ink);white-space:nowrap;transition:border-color .2s,background-color .2s,color .2s}
+.nue-rn .n-tabs a:hover{border-color:var(--n-ink)}
+.nue-rn .n-tabs a.on{background:var(--n-ink);border-color:var(--n-ink);color:#fff}
+.nue-rn .n-subnav{padding:26px var(--n-pad);border-bottom:1px solid var(--n-line)}
+
+/* about : meaning */
+.nue-rn .n-mean{padding:clamp(90px,11vw,170px) var(--n-pad);background:var(--n-stone);display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(30px,6vw,110px);align-items:end}
+.nue-rn .n-mean .word{font:400 clamp(92px,14vw,220px)/.8 var(--n-cg);letter-spacing:-.03em}
+.nue-rn .n-mean .pron{font:italic 400 clamp(15px,1.3vw,19px) var(--n-cg);color:var(--n-mute);margin:clamp(14px,1.4vw,22px) 0 0 .3em}
+.nue-rn .n-mean .def{border-top:1px solid var(--n-line);padding-top:24px}
+.nue-rn .n-mean .def h3{font:400 clamp(20px,1.8vw,26px)/1.4 var(--n-pr);letter-spacing:-.02em;margin:20px 0 16px}
+.nue-rn .n-mean .def p{font:300 clamp(14px,1.05vw,16px)/1.95 var(--n-pr);color:#3a423a}
+
+/* about : story */
+.nue-rn .n-story{display:grid;grid-template-columns:1fr 1fr;min-height:clamp(560px,52vw,820px)}
+.nue-rn .n-story .ph{position:relative;overflow:hidden}
+.nue-rn .n-story .bx{padding:clamp(60px,8vw,130px) var(--n-pad);display:flex;flex-direction:column;justify-content:center}
+.nue-rn :is(.n-story,.n-phil,.n-prom,.n-out) h2{font-size:clamp(34px,3.6vw,56px);line-height:1.08;margin:18px 0 26px;font-weight:500}
+.nue-rn .n-story p{font:300 clamp(14px,1.05vw,16px)/1.95 var(--n-pr);margin:0 0 14px;color:#3a423a;max-width:470px}
+
+/* about : philosophy */
+.nue-rn .n-phil{padding:clamp(90px,10vw,150px) var(--n-pad)}
+.nue-rn .n-phil .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:clamp(40px,5vw,70px)}
+.nue-rn .n-phil h2{margin-bottom:0}
+.nue-rn .n-phil .head p{font:300 clamp(13px,1vw,15px)/1.85 var(--n-pr);color:var(--n-mute);max-width:360px}
+.nue-rn .n-qs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--n-line)}
+.nue-rn .n-q{padding:30px clamp(16px,2vw,34px) 6px 0}
+.nue-rn .n-q+.n-q{padding-left:clamp(16px,2vw,34px);border-left:1px solid var(--n-line)}
+.nue-rn .n-q .n{font:400 13px var(--n-pr);letter-spacing:.2em;color:var(--n-mute)}
+.nue-rn .n-q h3{font:500 clamp(19px,1.6vw,24px)/1.45 var(--n-pr);margin:20px 0 12px;letter-spacing:-.01em}
+.nue-rn .n-q p{font:300 clamp(13px,.98vw,15px)/1.85 var(--n-pr);color:#4a524a}
+
+/* about : promises */
+.nue-rn .n-prom{padding:0 var(--n-pad) clamp(90px,10vw,150px)}
+.nue-rn .n-prom h2{margin-bottom:clamp(30px,4vw,56px)}
+.nue-rn .n-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.4vw,22px)}
+.nue-rn .n-card{position:relative;display:block;aspect-ratio:3/4.1;overflow:hidden;color:#fff}
+.nue-rn .n-card :is(img,video){transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.nue-rn .n-card:hover :is(img,video){transform:scale(1.04)}
+.nue-rn .n-card video[src*="about_bird"]{object-position:29% 50%}
+.nue-rn .n-card:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,20,14,.72),rgba(14,20,14,.05) 58%)}
+.nue-rn .n-card .ct{position:absolute;left:clamp(18px,1.8vw,30px);right:clamp(18px,1.8vw,30px);bottom:clamp(20px,2vw,32px);z-index:2}
+.nue-rn .n-card .n{font:500 11px var(--n-pr);letter-spacing:.22em;opacity:.85}
+.nue-rn .n-card h3{font:500 clamp(26px,2.4vw,38px)/1.05 var(--n-cg);margin:12px 0 10px;letter-spacing:-.015em;color:#fff}
+.nue-rn .n-card p{font:400 clamp(13px,.95vw,14px)/1.7 var(--n-pr);margin:0 0 16px;opacity:.92;color:#fff}
+.nue-rn .n-card .go{font:500 13px var(--n-pr);border-bottom:1px solid currentColor;padding-bottom:4px}
+
+/* about : founder */
+.nue-rn .n-fd{background:var(--n-ink);color:#EDE9E0;display:grid;grid-template-columns:1.05fr 1fr}
+.nue-rn .n-fd .ph{min-height:clamp(420px,40vw,640px)}
+.nue-rn .n-fd .bx{padding:clamp(60px,7vw,120px) var(--n-pad);display:flex;flex-direction:column;justify-content:center}
+.nue-rn .n-fd blockquote{font:300 clamp(22px,2.1vw,32px)/1.55 var(--n-pr);letter-spacing:-.01em;margin:22px 0 28px;color:#EDE9E0}
+.nue-rn .n-fd p{font:300 clamp(13px,1vw,15px)/1.95 var(--n-pr);color:#cfd0c8;margin:0 0 14px;max-width:480px}
+.nue-rn .n-fd .sig{margin-top:18px;font:500 14px var(--n-pr);letter-spacing:.06em;color:#fff}
+
+/* about : outro */
+.nue-rn .n-out{display:grid;grid-template-columns:1fr 1fr;background:var(--n-stone);align-items:center}
+.nue-rn .n-out .tx{padding:clamp(60px,7vw,120px) var(--n-pad)}
+.nue-rn .n-out .ph{aspect-ratio:1000/860;max-height:640px}
+.nue-rn .n-out h2{margin-bottom:18px}
+.nue-rn .n-out p{font:300 clamp(14px,1.05vw,16px)/1.85 var(--n-pr);margin:0 0 26px;color:#3a423a}
+
+/* detail pages 01-03 */
+.nue-rn .n-intro{padding:clamp(80px,9vw,140px) var(--n-pad) clamp(50px,6vw,90px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,110px);align-items:end}
+.nue-rn .n-intro h2{font-size:clamp(34px,3.6vw,56px);line-height:1.08;font-weight:500}
+.nue-rn .n-intro p{font:300 clamp(14px,1.05vw,16px)/1.95 var(--n-pr);color:#3a423a;border-top:1px solid var(--n-line);padding-top:24px}
+.nue-rn .n-row{display:grid;grid-template-columns:1fr 1fr;min-height:clamp(520px,46vw,720px)}
+.nue-rn .n-row.rev .ph{order:2}
+.nue-rn .n-row .ph{position:relative;overflow:hidden;background:#e4e0d6}
+.nue-rn .n-row .bx{padding:clamp(60px,7vw,120px) var(--n-pad);display:flex;flex-direction:column;justify-content:center}
+.nue-rn .n-row .n{font:400 13px var(--n-pr);letter-spacing:.2em;color:var(--n-mute)}
+.nue-rn .n-row h3{font:500 clamp(30px,3vw,46px)/1.1 var(--n-cg);letter-spacing:-.015em;margin:16px 0 22px}
+.nue-rn .n-row p{font:300 clamp(14px,1.05vw,16px)/1.95 var(--n-pr);margin:0 0 14px;color:#3a423a;max-width:470px}
+.nue-rn .n-row .note{font:400 12.5px/1.7 var(--n-pr);color:var(--n-mute);margin-top:10px}
+.nue-rn .n-pts{list-style:none;margin:8px 0 0;max-width:470px;border-top:1px solid var(--n-line)}
+.nue-rn .n-pts li{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--n-line);font:400 14px var(--n-pr);list-style:none}
+.nue-rn .n-pts li span:last-child{color:var(--n-mute);font-weight:300;text-align:right}
+.nue-rn .n-nx{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--n-line)}
+.nue-rn .n-nx a{padding:clamp(40px,5vw,70px) var(--n-pad);color:var(--n-ink);transition:background-color .3s}
+.nue-rn .n-nx a:hover{background:var(--n-stone)}
+.nue-rn .n-nx a+a{border-left:1px solid var(--n-line);text-align:right}
+.nue-rn .n-nx .k{font:500 11px var(--n-pr);letter-spacing:.22em;color:var(--n-mute)}
+.nue-rn .n-nx .t{display:block;font:500 clamp(26px,2.6vw,40px)/1.1 var(--n-cg);margin-top:12px}
+
+/* magazine */
+.nue-mag .n-mh{padding:clamp(56px,6vw,90px) var(--n-pad) 0}
+.nue-mag .crumb{font:400 12px var(--n-pr);color:var(--n-mute);letter-spacing:.06em}
+.nue-mag .crumb a{color:var(--n-mute)}
+.nue-mag .row1{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end;gap:0;padding:22px 0 clamp(34px,4vw,56px)}
+.nue-mag .row1>p{padding-left:clamp(32px,5vw,80px);max-width:calc(440px + clamp(32px,5vw,80px))}
+.nue-mag .row1 h1{font:500 clamp(48px,6vw,96px)/1 var(--n-cg);letter-spacing:-.02em}
+.nue-mag .row1 p{font:300 clamp(14px,1.05vw,16px)/1.85 var(--n-pr);color:#3a423a;max-width:400px}
+.nue-mag .n-tabs{margin-bottom:28px}
+.nue-mag .mbar{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:18px 0;border-top:1px solid var(--n-line);border-bottom:1px solid var(--n-line)}
+.nue-mag .filters{display:flex;gap:26px;flex-wrap:wrap}
+.nue-mag .filters button{all:unset;cursor:pointer;font:500 12px/1 var(--n-pr);letter-spacing:.16em;color:var(--n-mute);padding:6px 0 5px;border-bottom:1px solid transparent;text-transform:uppercase;transition:color .2s}
+.nue-mag .filters button:hover{color:var(--n-ink)}
+.nue-mag .filters button.on{color:var(--n-ink);border-bottom-color:var(--n-ink)}
+.nue-mag .msrch{min-width:280px}
+.nue-mag .nue-search-wrap{max-width:none!important;margin:0!important;padding:0!important}
+.nue-mag .nue-search-input{border:0!important;border-bottom:1px solid var(--n-ink)!important;border-radius:0!important;background:transparent!important;padding:8px 30px 8px 2px!important;font:300 13px var(--n-pr)!important;color:var(--n-ink)!important}
+.nue-mag .nue-search-input:focus{border-color:var(--n-ink)!important;background:transparent!important}
+.nue-mag .nue-search-input::placeholder{color:#9a9e96!important}
+.nue-mag .nue-search-clear{right:0!important}
+.nue-mag .nue-search-result{text-align:left!important;margin:8px 0 0!important;font:400 12px var(--n-pr)!important;color:var(--n-mute)!important}
+.nue-mag .nue-search-result:empty{display:none}
+.nue-mag #nueGrid.magazine-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:clamp(40px,4vw,60px) clamp(16px,2vw,30px)!important;padding:clamp(40px,5vw,70px) var(--n-pad) clamp(70px,8vw,120px)!important;margin:0!important;max-width:none!important;width:auto!important}
+.nue-mag .magazine-card{display:block;color:var(--n-ink)!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;margin:0!important;width:auto!important;transform:none!important}
+.nue-mag .magazine-card.n-off{display:none!important}
+.nue-mag .magazine-thumb{aspect-ratio:16/10;overflow:hidden;margin:0 0 18px!important;border-radius:0!important;height:auto!important;padding:0!important}
+.nue-mag .magazine-thumb img{width:100%!important;height:100%!important;object-fit:cover!important;border-radius:0!important;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)!important}
+.nue-mag .magazine-card:hover .magazine-thumb img{transform:scale(1.04)!important}
+.nue-mag .n-meta{display:block;font:500 11.5px var(--n-pr);letter-spacing:.18em;color:var(--n-mute);text-transform:uppercase}
+.nue-mag .magazine-title{font:500 clamp(16px,1.25vw,19px)/1.45 var(--n-pr)!important;letter-spacing:-.02em!important;margin:10px 0 6px!important;color:var(--n-ink)!important;text-align:left!important;padding:0!important}
+.nue-mag .magazine-desc{font:300 13.5px/1.7 var(--n-pr)!important;color:var(--n-mute)!important;text-align:left!important;margin:0!important;padding:0!important}
+.nue-mag .magazine-desc em{display:none!important}
+.nue-mag .n-feat .n-badge{display:none}
+.nue-mag #nueGrid.is-all .n-feat{grid-column:1/-1;display:grid;grid-template-columns:1.35fr 1fr;gap:0 clamp(24px,4vw,64px);align-items:center;margin-bottom:clamp(10px,2vw,30px)!important}
+.nue-mag #nueGrid.is-all .n-feat .magazine-thumb{margin:0!important}
+.nue-mag #nueGrid.is-all .n-feat .n-badge{display:table;margin-bottom:20px}
+.nue-mag #nueGrid.is-all .n-feat .magazine-title{font-size:clamp(24px,2.3vw,36px)!important;line-height:1.35!important;letter-spacing:-.025em!important;margin:14px 0 12px!important}
+.nue-mag #nueGrid.is-all .n-feat .magazine-desc{font-size:clamp(14px,1.05vw,16px)!important;line-height:1.85!important;color:#3a423a!important}
+.nue-mag #nueGrid.is-all .n-feat .n-read{display:inline-block;margin-top:24px}
+.nue-mag .n-read{display:none;border-bottom:1px solid var(--n-ink);padding-bottom:5px;font:500 14px var(--n-pr);color:var(--n-ink)}
+.nue-mag .nue-no-result{padding:20px var(--n-pad) 100px!important;text-align:center;color:var(--n-mute)}
+
+/* mobile */
+@media (max-width:760px){
+ .nue-rn .n-hero{height:640px;min-height:0}
+ .nue-rn .n-hero.sub{height:560px}
+ .nue-rn .n-hero .tx{bottom:96px;right:var(--n-pad)}
+ .nue-rn .n-hero>img{object-position:62% 50%}
+ .nue-rn .n-hero h1{font-size:clamp(32px,8.6vw,44px);line-height:1.08}
+ .nue-rn .n-scroll{display:none}
+ .nue-rn .n-subnav{padding:18px 0 18px var(--n-pad)}
+ .nue-rn .n-tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-right:var(--n-pad)}
+ .nue-rn .n-tabs::-webkit-scrollbar{display:none}
+ .nue-rn .n-tabs a{padding:9px 12px 8px;font-size:11px}
+ .nue-rn .n-mean{grid-template-columns:1fr;gap:34px;align-items:start}
+ .nue-rn .n-story{grid-template-columns:1fr}.nue-rn .n-story .ph{height:440px}
+ .nue-rn .n-phil .head{display:block}.nue-rn .n-phil .head p{margin-top:16px}
+ .nue-rn .n-qs{grid-template-columns:1fr}.nue-rn .n-q+.n-q{padding-left:0;border-left:0;border-top:1px solid var(--n-line)}.nue-rn .n-q{padding:24px 0 22px}
+ .nue-rn .n-cards{grid-template-columns:1fr;gap:12px}.nue-rn .n-card{aspect-ratio:4/3.2}
+ .nue-rn .n-fd{grid-template-columns:1fr}.nue-rn .n-fd .ph{min-height:300px;height:300px}
+ .nue-rn .n-out{grid-template-columns:1fr}.nue-rn .n-out .ph{order:-1}
+ .nue-rn .n-intro{grid-template-columns:1fr;gap:26px}
+ .nue-rn .n-row{grid-template-columns:1fr;min-height:0}.nue-rn .n-row .ph{height:380px}.nue-rn .n-row.rev .ph{order:0}
+ .nue-rn .n-nx{grid-template-columns:1fr}.nue-rn .n-nx a+a{border-left:0;border-top:1px solid var(--n-line);text-align:left}
+ .nue-mag .row1{display:block}.nue-mag .row1 p{margin-top:16px;padding-left:0}
+ .nue-mag .n-tabs{margin-right:calc(-1 * var(--n-pad))}
+ .nue-mag .mbar{display:block}
+ .nue-mag .filters{gap:18px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-bottom:14px}
+ .nue-mag .filters::-webkit-scrollbar{display:none}
+ .nue-mag .filters button{font-size:11px}
+ .nue-mag .msrch{min-width:0}
+ .nue-mag #nueGrid.magazine-grid{grid-template-columns:1fr!important;gap:36px!important}
+ .nue-mag #nueGrid.is-all .n-feat{display:block}
+ .nue-mag #nueGrid.is-all .n-feat .magazine-thumb{margin:0 0 18px!important}
+}
+@media (min-width:761px) and (max-width:1024px){
+ .nue-mag #nueGrid.magazine-grid{grid-template-columns:repeat(2,1fr)!important}
+ .nue-rn .n-cards{gap:10px}
+}
+
+/* v2 (2026-11-01) : About Us = magazine-style header, inset hero / article header */
+.nue-about .n-mh .n-tabs,.nue-art .n-mh .n-tabs{margin-bottom:0}
+.nue-about .n-mh{padding-bottom:clamp(28px,3vw,40px);border-bottom:1px solid var(--n-line)}
+.nue-about .n-hero{margin:clamp(36px,4vw,56px) var(--n-pad) 0;height:min(72vh,640px);min-height:440px}
+.nue-about .n-hero.sub{height:min(62vh,560px);min-height:400px}
+.nue-about .n-hero .tx{left:clamp(24px,4vw,64px);right:clamp(24px,4vw,64px);bottom:clamp(32px,5vw,64px)}
+.nue-about .n-scroll{display:none}
+.nue-about .n-hero h1{font-size:clamp(34px,4.2vw,64px)}
+.nue-about .n-hero+.n-mean{margin-top:clamp(60px,7vw,100px)}
+.nue-art{background:var(--n-paper)}
+.nue-art .n-mh{padding-bottom:clamp(28px,3vw,40px);border-bottom:1px solid var(--n-line)}
+.nue-art .row1{padding-bottom:clamp(24px,3vw,40px)}
+.nue-art .row1 h1{font-size:clamp(40px,4.4vw,68px)}
+@media (max-width:760px){
+ .nue-about .n-hero,.nue-about .n-hero.sub{margin:28px var(--n-pad) 0;height:440px;min-height:0}
+ .nue-about .n-hero .tx{left:20px;right:20px;bottom:28px}
+ .nue-about .n-hero h1{font-size:clamp(28px,8vw,38px)}
+ .nue-about .n-hero p{display:none}
+ .nue-about .n-tabs,.nue-art .n-tabs{margin-right:calc(-1 * var(--n-pad))}
+}
+
+/* v3 (2026-11-01) : side margins + prev/next navigation */
+.nue-rn{--n-side:max(var(--n-pad),calc((100% - 1280px) / 2));display:flow-root}
+.nue-rn .n-mh,.nue-rn .n-phil,.nue-rn .n-prom,.nue-rn .n-intro{padding-left:var(--n-side);padding-right:var(--n-side)}
+.nue-mag #nueGrid.magazine-grid{padding-left:var(--n-side)!important;padding-right:var(--n-side)!important}
+.nue-about .n-hero{margin-left:var(--n-side);margin-right:var(--n-side)}
+.nue-about :is(.n-mean,.n-story,.n-fd,.n-out,.n-row){margin-left:var(--n-side);margin-right:var(--n-side)}
+.nue-about .n-mean{padding:clamp(70px,8vw,130px) clamp(32px,6vw,96px)}
+.nue-about :is(.n-story,.n-fd,.n-out,.n-row) :is(.bx,.tx){padding-left:clamp(32px,5vw,80px);padding-right:clamp(32px,5vw,80px)}
+.nue-about .n-story{min-height:clamp(520px,44vw,700px)}
+.nue-about .n-row{min-height:clamp(460px,40vw,640px)}
+.nue-about .n-intro+.n-row{margin-top:0}
+.nue-about .n-out{margin-bottom:clamp(70px,8vw,120px)}
+.nue-about .n-fd+.n-out,.nue-about .n-mean+.n-story{margin-top:clamp(16px,2vw,24px)}
+.nue-rn .n-nx .t{white-space:nowrap}
+.nue-rn .n-nx{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:clamp(70px,8vw,120px) var(--n-side) clamp(70px,8vw,120px);padding-top:clamp(30px,3.4vw,46px);border-top:1px solid var(--n-line)}
+.nue-rn .n-nx a{display:grid;grid-template-columns:auto auto;grid-template-rows:auto auto;column-gap:22px;align-items:center;padding:0;background:none!important;border:0!important;text-align:left;color:var(--n-ink)}
+.nue-rn .n-nx a::before{content:'←';grid-row:1/3;grid-column:1;width:60px;height:60px;border:1px solid var(--n-ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font:300 20px/1 var(--n-pr);transition:background-color .3s,color .3s,transform .3s}
+.nue-rn .n-nx a .k,.nue-rn .n-nx a .t{grid-column:2}
+.nue-rn .n-nx a .t{margin-top:6px;font-size:clamp(22px,2.2vw,32px)}
+.nue-rn .n-nx a+a{grid-template-columns:auto auto;text-align:right}
+.nue-rn .n-nx a+a::before{content:'→';grid-column:2}
+.nue-rn .n-nx a+a .k,.nue-rn .n-nx a+a .t{grid-column:1;grid-row:auto}
+.nue-rn .n-nx a+a .k{grid-row:1}.nue-rn .n-nx a+a .t{grid-row:2}
+.nue-rn .n-nx a:hover::before{background:var(--n-ink);color:#fff}
+.nue-rn .n-nx a:first-child:hover::before{transform:translateX(-4px)}
+.nue-rn .n-nx a+a:hover::before{transform:translateX(4px)}
+@media (max-width:760px){
+ .nue-about .n-mean{padding:56px 24px}
+ .nue-about :is(.n-story,.n-fd,.n-out,.n-row) :is(.bx,.tx){padding:44px 24px}
+ .nue-about .n-row .ph,.nue-about .n-story .ph{height:300px}
+ .nue-about .n-row{min-height:0}.nue-about .n-story{min-height:0}
+ .nue-rn .n-nx{flex-direction:column;align-items:stretch;gap:22px;margin:56px var(--n-side)}
+ .nue-rn .n-nx a{justify-content:start}
+ .nue-rn .n-nx a+a{justify-content:end}
+ .nue-rn .n-nx a{column-gap:12px;border-top:0!important}
+ .nue-rn .n-nx a::before{width:44px;height:44px;font-size:16px}
+ .nue-rn .n-nx a .t{font-size:19px}
+ .nue-rn .n-nx .k{font-size:10px}
+}
+
+/* v4 (2026-11-01) : 3:2 blocks, equal founder/collection, compact nue */
+.nue-about :is(.n-row,.n-story,.n-fd,.n-out){grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:0;align-items:stretch}
+.nue-about :is(.n-row,.n-story,.n-fd,.n-out) .ph{aspect-ratio:auto;height:auto;min-height:0;max-height:none;position:relative;overflow:hidden}
+.nue-about :is(.n-row,.n-story,.n-fd,.n-out) .ph::before{content:'';display:block;padding-top:66.667%}
+.nue-about :is(.n-row,.n-story,.n-fd,.n-out) .ph>:is(img,video){position:absolute;inset:0;width:100%;height:100%}
+.nue-about :is(.n-row,.n-story,.n-fd,.n-out) :is(.bx,.tx){padding-top:clamp(32px,3.6vw,52px);padding-bottom:clamp(32px,3.6vw,52px);display:flex;flex-direction:column;justify-content:center}
+.nue-about :is(.n-story,.n-out) h2{font-size:clamp(30px,3vw,46px);margin:14px 0 18px}
+.nue-about .n-row h3{font-size:clamp(28px,2.6vw,40px);margin:12px 0 16px}
+.nue-about .n-fd blockquote{font-size:clamp(20px,1.8vw,27px);margin:18px 0 20px}
+.nue-about .n-out .tx p{margin-bottom:20px}
+.nue-about :is(.bx,.tx)>:is(.n-btn,.sig,.n-pts){align-self:flex-start}
+.nue-about :is(.bx,.tx)>.n-pts{align-self:stretch}
+.nue-about .n-mean{padding-top:clamp(40px,4.6vw,72px);padding-bottom:clamp(40px,4.6vw,72px);align-items:center}
+.nue-about .n-mean .word{font-size:clamp(76px,9.5vw,150px)}
+.nue-about .n-mean .def{padding-top:20px}
+.nue-about .n-mean .def h3{margin:16px 0 12px}
+@media (max-width:760px){
+ .nue-about :is(.n-row,.n-story,.n-fd,.n-out){grid-template-columns:minmax(0,1fr)}
+ .nue-about :is(.n-row,.n-story,.n-fd,.n-out) .ph{height:auto!important;min-height:0!important}
+ .nue-about :is(.n-row,.n-story,.n-fd,.n-out) :is(.bx,.tx){padding:36px 24px}
+ .nue-about .n-mean{padding:40px 24px;gap:22px}
+ .nue-about .n-mean .word{font-size:84px}
+}
+
+</style>
+<style id="nue-rn-v3">
+.nue-rn .n-hero>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.nue-rn .n-card video[src*="about_bird_pc"]{object-position:50% 50%}
+@media (max-width:760px){.nue-rn br.nue-pcbr{display:none}}
+</style>
+<style id="nue-sub-css">
+.nue-rn .n-sub-body{padding:0 var(--n-side) clamp(70px,8vw,120px)}
+.nue-rn .n-sh{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin:clamp(64px,7vw,104px) 0 clamp(26px,3vw,40px)}
+.nue-rn .n-sh h2{font:500 clamp(30px,3.2vw,46px)/1.08 var(--n-cg);margin:14px 0 0;color:var(--n-ink)}
+.nue-rn .n-sh h2 span{display:block;font:500 15px/1.5 var(--n-pr);margin-top:10px;color:#3d453d;letter-spacing:0}
+.nue-rn .n-sh p{margin:0;font:400 14.5px/1.85 var(--n-pr);color:#4a524a}
+.nue-rn .n-doc{border-top:1px solid var(--n-ink);padding:22px 0 0;margin:0 0 clamp(48px,5vw,72px)}
+.nue-rn .n-doc .k{display:grid;grid-template-columns:56px minmax(0,1fr);align-items:baseline;margin:0 0 18px}
+.nue-rn .n-doc .k i{font:italic 400 32px/1 var(--n-cg);color:var(--n-mute)}
+.nue-rn .n-doc .k b{font:500 16px/1.5 var(--n-pr);color:var(--n-ink)}
+.nue-rn .n-doc .k small{display:block;font:400 13px/1.6 var(--n-pr);color:var(--n-mute);margin-top:4px}
+.nue-rn .n-frame{background:#fff;padding:clamp(10px,2vw,28px);border:1px solid var(--n-line)}
+.nue-rn .n-frame img{display:block;width:100%;height:auto;object-fit:contain}
+.nue-rn .n-bots{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.nue-rn .n-bot{background:#fff;display:flex;flex-direction:column}
+.nue-rn .n-bot .im{position:relative;background:var(--n-stone)}
+.nue-rn .n-bot .im:before{content:'';display:block;padding-top:100%}
+.nue-rn .n-bot .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.nue-rn .n-bot .tx{padding:18px 16px 22px}
+.nue-rn .n-bot .en{font:500 10.5px/1.3 var(--n-pr);letter-spacing:.16em;color:var(--n-mute)}
+.nue-rn .n-bot h4{font:500 20px/1.2 var(--n-cg);margin:8px 0 8px;color:var(--n-ink)}
+.nue-rn .n-bot p{font:400 13px/1.75 var(--n-pr);color:#4a524a;margin:0}
+.nue-rn .n-list{border-top:1px solid var(--n-ink)}
+.nue-rn .n-list>div{display:grid;grid-template-columns:64px minmax(0,1fr);padding:24px 0;border-bottom:1px solid var(--n-line)}
+.nue-rn .n-list i{font:italic 400 34px/1 var(--n-cg);color:var(--n-mute)}
+.nue-rn .n-list h4{font:500 17px/1.5 var(--n-pr);margin:0 0 6px;color:var(--n-ink)}
+.nue-rn .n-list p{font:400 14px/1.85 var(--n-pr);color:#4a524a;margin:0}
+.nue-rn .n-list .note{font-size:13px;color:var(--n-mute);margin-top:8px}
+.nue-rn .n-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.nue-rn .n-card2{background:#fff;padding:clamp(24px,3vw,36px);border-top:2px solid var(--n-ink)}
+.nue-rn .n-card2 .en{font:500 11px/1.3 var(--n-pr);letter-spacing:.16em;color:var(--n-mute)}
+.nue-rn .n-card2 h4{font:500 24px/1.2 var(--n-cg);margin:10px 0 14px;color:var(--n-ink)}
+.nue-rn .n-card2 ul{margin:0;padding:0 0 0 18px}
+.nue-rn .n-card2 li{font:400 14px/1.85 var(--n-pr);color:#4a524a;margin:0 0 6px}
+.nue-rn .n-quote{margin:clamp(40px,5vw,64px) 0 0;padding:clamp(28px,4vw,48px);background:var(--n-stone);font:500 clamp(20px,2vw,26px)/1.5 var(--n-cg);color:var(--n-ink);text-align:center}
+.nue-rn .n-quote small{display:block;font:400 14px/1.8 var(--n-pr);color:#4a524a;margin-top:12px}
+.nue-rn .n-pat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.nue-rn .n-pat figure{margin:0;background:#fff;border:1px solid var(--n-line);padding:clamp(14px,2vw,24px)}
+.nue-rn .n-pat img{display:block;width:100%;height:auto}
+.nue-rn .n-pat figcaption{margin-top:16px;font:400 13px/1.7 var(--n-pr);color:#4a524a}
+.nue-rn .n-pat figcaption b{display:block;font:500 11px/1.3 var(--n-pr);letter-spacing:.16em;color:var(--n-mute);margin-bottom:6px}
+.nue-rn .n-back{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid var(--n-line);padding-top:28px;margin-top:clamp(56px,6vw,88px)}
+.nue-rn .n-lk{display:inline-block;font:500 13px/1.4 var(--n-pr);color:var(--n-ink);border-bottom:1px solid currentColor;padding-bottom:4px}
+.nue-rn .n-wide{margin:0 0 clamp(18px,2vw,24px)}
+.nue-rn .n-wide img{display:block;width:100%;height:auto}
+@media (max-width:1024px){.nue-rn .n-bots{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:760px){.nue-rn .n-sh,.nue-rn .n-two,.nue-rn .n-pat{grid-template-columns:minmax(0,1fr);gap:16px}.nue-rn .n-bots{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.nue-rn .n-doc .k{grid-template-columns:44px minmax(0,1fr)}.nue-rn .n-list>div{grid-template-columns:48px minmax(0,1fr)}}
+</style>
+<style id="nue-std-css">
+.nue-rn .nx-part{margin:clamp(72px,8vw,120px) 0 0;padding-top:clamp(36px,4vw,56px);border-top:1px solid var(--n-ink);scroll-margin-top:110px}
+.nue-rn .nx-part:first-child{margin-top:clamp(40px,5vw,64px)}
+.nue-rn .nx-part .nx-no{display:block;font:500 12px/1 var(--n-pr);letter-spacing:.2em;color:var(--n-mute)}
+.nue-rn .nx-part h2.nx-h{font:500 clamp(36px,4.2vw,60px)/1.05 var(--n-cg);margin:14px 0 0;color:var(--n-ink)}
+.nue-rn .nx-part p.nx-p{max-width:620px;margin:16px 0 0;font:400 15px/1.85 var(--n-pr);color:#4a524a}
+.nue-rn .nx-part + .n-sh{margin-top:clamp(40px,4.5vw,64px)}
+@media (max-width:760px){.nue-rn .nx-part{scroll-margin-top:70px}.nue-rn .nx-part p.nx-p{font-size:14px}}
+</style>
+<div class="nue-rn nue-mag nue-about nue-sub">
+<section class="n-mh"><div class="crumb"><a href="/">Home</a>  ›  UV Shield Essence  ›  Tested &amp; Clean</div>
+<div class="row1"><h1>UV Shield Essence</h1><p>유브이 쉴드 에센스의 3종 시험성적서와 12종 유해성분 제외 리스트를 한 페이지에 모았습니다.</p></div>
+<div class="n-tabs"><a href="/new/page21-02-r.html">FACIAL DEEP CLEANSER</a><a href="/new/page21-03-r.html">HAND COMFORT CREAM</a><a href="/new/page21-01-r.html" class="on">UV SHIELD ESSENCE</a></div></section>
+<div class="n-sub-body">
+<div class="nx-part" id="test"><span class="nx-no">PART 01</span><h2 class="nx-h">Tested &amp; Trusted</h2><p class="nx-p">전문 기관의 임상 시험을 통과한 UV Shield Essence의 3종 시험성적서입니다.<br/>남녀노소 모두 안심하고 사용할 수 있도록 3가지 엄격한 시험을 모두 통과했습니다.</p></div>
+<div class="n-sh"><div><span class="n-eb d">3 TEST REPORTS</span><h2>Dermatologist Tested<span>3종 시험성적서</span></h2></div><p>시험은 외부 전문 기관에서 진행했으며, 결과 보고서 요약본을 그대로 공개합니다. 개인에 따라 차이가 있을 수 있습니다.</p></div>
+<div class="n-doc"><div class="k"><i>01</i><div><b>민감성 피부 대상 저자극 테스트</b><small>민감성 피부 대상 피부 첩포에 의한 일차 자극 인체적용시험</small></div></div><div class="n-frame"><div class="nvcrop nvc-rep"><img src="/Products/%EC%9E%84%EC%83%81%EC%8B%9C%ED%97%98/%EC%84%A0%ED%81%AC%EB%A6%BC%20%EB%AF%BC%EA%B0%90%EC%84%B1%20%ED%94%BC%EB%B6%80%20%ED%85%8C%EC%8A%A4%ED%8A%B8.png" alt="UV Shield Essence 민감성 피부 대상 저자극 테스트 시험성적서" loading="lazy"/><img class="nvov" src="/web/upload/NNEditor/20261102/nv10_z_01_1_kr_idx.jpg" alt="" style="left:22.41%;top:64.41%;width:14.32% !important;margin:0 !important"/><img class="nvov" src="/web/upload/NNEditor/20261102/nv10_z_01_1_kr_con.jpg" alt="" style="left:1.20%;top:85.78%;width:47.85% !important;margin:0 !important"/><img class="nvov" src="/web/upload/NNEditor/20261102/nv10_z_01_1_en_idx.jpg" alt="" style="left:72.76%;top:68.69%;width:12.74% !important;margin:0 !important"/><img class="nvov" src="/web/upload/NNEditor/20261102/nv10_z_01_1_en_con.jpg" alt="" style="left:50.80%;top:87.00%;width:48.00% !important;margin:0 !important"/></div></div></div>
+<div class="n-doc"><div class="k"><i>02</i><div><b>저자극 테스트</b><small>피부 첩포에 의한 일차 자극 인체적용시험</small></div></div><div class="n-frame"><div class="nvcrop nvc-rep"><img src="/Products/%EC%9E%84%EC%83%81%EC%8B%9C%ED%97%98/%EC%84%A0%ED%81%AC%EB%A6%BC%20%EC%A0%80%EC%9E%90%EA%B7%B9%20%ED%85%8C%EC%8A%A4%ED%8A%B8.png" alt="UV Shield Essence 저자극 테스트 시험성적서" loading="lazy"/><img class="nvov" src="/web/upload/NNEditor/20261102/nv10_z_01_2_kr_idx.jpg" alt="" style="left:22.42%;top:64.40%;width:14.65% !important;margin:0 !important"/><img class="nvov" src="/web/upload/NNEditor/20261102/nv10_z_01_2_kr_con.jpg" alt="" style="left:1.20%;top:85.85%;width:47.85% !important;margin:0 !important"/><img class="nvov" src="/web/upload/NNEditor/20261102/nv10_z_01_2_en_idx.jpg" alt="" style="left:73.22%;top:66.33%;width:12.61% !important;margin:0 !important"/><img class="nvov" src="/web/upload/NNEditor/20261102/nv10_z_01_2_en_con.jpg" alt="" style="left:50.80%;top:86.83%;width:48.00% !important;margin:0 !important"/></div></div></div>
+<div class="n-doc"><div class="k"><i>03</i><div><b>알레르기 유발성분 무첨가</b><small>26종 알러젠 프리 테스트</small></div></div><div class="n-frame"><div class="nvcrop nvc-rep"><img src="/Products/%EC%9E%84%EC%83%81%EC%8B%9C%ED%97%98/%EC%84%A0%ED%81%AC%EB%A6%BC%20%EC%95%8C%EB%9F%AC%EC%A7%80%20%ED%85%8C%EC%8A%A4%ED%8A%B8.png" alt="UV Shield Essence 알레르기 유발성분 무첨가 시험성적서" loading="lazy"/></div><div class="nv-zoom r"><span class="ic"><svg width="15" height="15" viewbox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg></span><img src="/web/upload/NNEditor/20261102/nv9_zoomf_1101_3.jpg" alt="시험 결과 확대"/></div></div></div>
+<div class="nx-part" id="clean"><span class="nx-no">PART 02</span><h2 class="nx-h">Clean Formula</h2><p class="nx-p">좋은 성분을 더하기 전에, 나쁜 성분을 먼저 뺐습니다.<br/>제품을 기획하는 첫 단계에서부터 피부와 환경에 유해한 성분을 원천적으로 배제합니다.</p></div>
+<div class="n-sh"><div><span class="n-eb d">12 EXCLUDED</span><h2>Designed without<span>설계 단계부터 배제한 12종 유해성분</span></h2></div><p>국내외 연구와 환경 단체의 권고 기준을 참고해 선정했으며, 스튜디오뉴의 모든 제품에 같은 기준을 적용합니다.</p></div>
+<div class="n-doc"><div class="k k1"><div><b>UV Shield Essence 유해성분 제외 리스트</b><small>선크림에 넣지 않은 12가지 성분</small></div></div><div class="n-frame"><div class="nvcrop nvc-x12"><img src="/Products/%EC%9C%A0%ED%95%B4%EC%84%B1%EB%B6%84/%EC%84%A0%ED%81%AC%EB%A6%BC%20%EC%A0%9C%EC%99%B8%20%EC%84%B1%EB%B6%84(%EC%B5%9C%EC%A2%85).png" alt="UV Shield Essence 12종 유해성분 제외 리스트" loading="lazy"/></div></div></div>
+<div class="n-back"><a class="n-lk" href="/product/detail.html?product_no=53">← 제품 보러 가기</a><a class="n-lk" href="/new/page20-r.html">Jeju Active Complex · Aluminum Tube →</a></div>
+</div>
+</div>
+<script id="nue-rn-v3js">
+(function(){var root=document.querySelector('.nue-rn');if(!root)return;
+var pc=window.matchMedia('(min-width:761px)');
+[].forEach.call(root.querySelectorAll('video[data-pc]'),function(v){if(pc.matches){v.setAttribute('poster',v.getAttribute('data-pcposter'));v.src=v.getAttribute('data-pc');}});
+var vs=[].slice.call(root.querySelectorAll('video'));
+if(!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){});}else{v.pause();}});},{threshold:0.15});
+vs.forEach(function(v){io.observe(v);});})();
+</script>
