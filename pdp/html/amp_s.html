@@ -1,0 +1,301 @@
+<style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+.np{max-width:860px;margin:0 auto;color:var(--ink);font-family:Pretendard,'Noto Sans KR',sans-serif;word-break:keep-all;text-align:left;background:var(--bg)}
+.np *{box-sizing:border-box}.np p{margin:0}.np img,.np video{display:block;width:100%!important;height:auto!important;max-width:100%!important;margin:0!important}
+.np .vw{position:relative;overflow:hidden;border-radius:18px}.np .vw video,.np .vw img{position:absolute;inset:0;width:100%!important;height:100%!important;object-fit:cover}
+.np .eb{font:600 11px/1 Pretendard,sans-serif;letter-spacing:.26em;color:var(--acc);text-transform:uppercase}
+.np .sf{font-family:'Cormorant Garamond',serif;font-weight:500}
+.np .pad{padding:0 clamp(20px,5vw,48px)}
+.np .sec{margin-top:clamp(80px,12vw,120px)}
+.np .h2{font-family:Pretendard,sans-serif;font-weight:600;font-size:clamp(28px,4.4vw,40px);line-height:1.25;letter-spacing:-.03em;margin:12px 0 0}
+.np .h2s{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,5vw,48px);line-height:1.05;margin:10px 0 0}
+.np .lead{font-size:14.5px;line-height:1.8;color:var(--sub);margin-top:12px}
+/* hero */
+.np .hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:44px;padding:44px 44px 44px 48px;background:var(--tone)}
+.np .hero .h1{font-variant-numeric:lining-nums;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:58px;line-height:.98;margin:20px 0 18px;color:var(--ink)}
+.np .hero .h1 :is(i,em){font-weight:400}
+.np .hero .kr{font-size:16px;line-height:1.8;color:var(--sub)}
+.np .hero .spec{display:grid;grid-template-columns:1fr 1fr;gap:22px 18px;margin-top:46px;border-top:1px solid var(--rule);padding-top:24px}
+.np .hero .spec :is(b,strong){display:block;font:600 11px Pretendard;letter-spacing:.2em;color:var(--mute);margin-bottom:6px}
+.np .hero .spec span{font-size:16.5px;line-height:1.4}
+.np .hero .md{justify-self:end;width:100%;max-width:340px}.np .hero .md .vw{border-radius:20px}
+/* statement */
+.np .st{padding:clamp(70px,11vw,100px) clamp(22px,6vw,70px) 0;text-align:center}
+.np .st .big{font-size:clamp(22px,3.4vw,31px);line-height:1.6;font-weight:400;letter-spacing:-.02em}
+.np .st .big em{font-style:normal;background:linear-gradient(transparent 62%,var(--hl) 62%)}
+/* why */
+.np .qa .rows{margin-top:28px}
+.np .qa .row{display:grid;grid-template-columns:1fr 1.25fr;column-gap:22px;border-top:1px solid var(--line)}.np .qa .row.hd{border-top:0}.np .qa .row.hd>div{padding:0 6px 12px;font:600 11px Pretendard;letter-spacing:.24em;color:var(--mute)}.np .qa .row.hd .a{color:var(--acc)}.np .qa .more{margin-top:22px}.np .qa .more>p{font:600 11px Pretendard;letter-spacing:.14em;color:var(--mute)}.np .qa .more .pills{margin-top:10px}.np .qa .tp{display:block;font-size:12px;font-weight:700;color:var(--acc);margin-bottom:4px}
+.np .qa .row:last-child{border-bottom:1px solid var(--line)}
+.np .qa .q,.np .qa .a{padding:20px 6px;font-size:14.5px;line-height:1.7}
+.np .qa .q{color:var(--mute)}
+/* texture cards */
+.np .ts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.np .tile{background:var(--card);border-radius:22px;padding:28px 26px;position:relative;overflow:hidden}
+.np .tile .n{font-variant-numeric:lining-nums;font-feature-settings:'lnum' 1;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;line-height:1;color:var(--mute);position:absolute;right:24px;top:26px;letter-spacing:.02em}
+.np .tile .t3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:29px;line-height:1.12;margin:12px 0 6px}
+.np .tile .k{font-size:14px;font-weight:600;color:var(--acc2);margin-bottom:12px}
+.np .tile p{font-size:14.5px;line-height:1.8;color:var(--sub)}
+.np .meter{margin-top:18px}.np .meter div{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-top:10px}
+.np .bar{height:6px;border-radius:9px;background:var(--line);position:relative;margin-top:6px}.np .bar :is(i,em){position:absolute;left:0;top:0;bottom:0;border-radius:9px;background:var(--acc)}
+.np .pills{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}.np .pills span{font-size:12.5px;padding:7px 13px;border-radius:999px;background:var(--pill);color:var(--ink)}
+.np .nt{display:block;margin-top:10px;font-size:11px;color:var(--mute)}
+/* formula zigzag */
+.np .fx .hd{display:flex;align-items:flex-end;gap:16px}
+.np .fx .num{font-variant-numeric:lining-nums;font-feature-settings:'lnum' 1;font-family:'Cormorant Garamond',serif;font-size:clamp(80px,12vw,110px);line-height:.8;color:var(--line)}
+.np .fx .hd p{font-size:13.5px;color:var(--sub);margin-top:6px}.np .fx .hd p.h2s{font-size:clamp(34px,5vw,48px);color:var(--ink);margin:0}
+.np .fx .it{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,4vw,40px);align-items:center;margin-top:clamp(40px,6vw,56px)}
+.np .fx .it.rv .m{order:2}
+.np .fx .lb{font:600 10.5px Pretendard;letter-spacing:.24em;color:var(--mute)}
+.np .fx .t3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(28px,3.6vw,34px);margin:10px 0 4px;line-height:1.1}
+.np .fx .k{font-size:14px;font-weight:600;color:var(--acc2)}
+.np .fx .d{font-size:14.5px;line-height:1.8;color:var(--sub);margin-top:12px}
+.np .fx .pl{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}.np .fx .pl span{font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--pill)}.np .mw{position:relative}.np .mw .on{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-size:10px;color:#222;opacity:.75}
+.np .fx .it img{border-radius:18px}.np .crop{overflow:hidden;border-radius:18px;aspect-ratio:1600/1330}.np .crop img{height:100%!important;object-fit:cover;object-position:bottom;border-radius:0!important}
+/* JAC box */
+.np .jac{background:var(--box);border-radius:28px;padding:clamp(30px,5vw,46px) clamp(22px,4vw,40px)}
+.np .jac .in{background:#fff;border-radius:18px;overflow:hidden;margin-top:22px}
+.np .lk{display:inline-block;margin-top:16px;font:600 13px Pretendard;color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:3px;text-decoration:none}
+/* texture photo + x pills */
+.np .tx2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,4vw,40px);align-items:center}
+.np .tx2 img,.np .tx2 .vw{border-radius:20px}
+.np .xp{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.np .xp span{font-size:13px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--pill)}
+.np .xp span:before{content:"\00d7";margin-right:5px;font-weight:400}
+/* routine */
+.np .rt{background:var(--tone);border-radius:28px;padding:clamp(30px,5vw,46px) clamp(22px,4vw,40px)}
+.np .tl{display:grid;grid-template-columns:repeat(var(--n),1fr);margin-top:34px;position:relative}
+.np .tl:before{content:"";position:absolute;left:7px;right:0;top:7px;height:1px;background:var(--ink);opacity:.35}
+.np .tl .s{position:relative;padding-right:14px}
+.np .tl .s:before{content:"";display:block;width:15px;height:15px;border-radius:50%;border:1.5px solid var(--ink);background:var(--tone);position:relative}
+.np .tl .s.on:before{background:var(--ink)}
+.np .tl .s i,.np .tl .s em{display:block;font-family:'Cormorant Garamond',serif;font-size:22px;margin:16px 0 6px}
+.np .tl .s p{font-size:13.5px;line-height:1.6;color:var(--sub)}
+.np .fork{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.np .fork>p{grid-column:1/-1;font:600 10.5px Pretendard;letter-spacing:.22em;color:var(--mute)}
+.np .fork div{background:rgba(255,255,255,.6);border-radius:14px;padding:16px 18px;font-size:13.5px;line-height:1.55;color:var(--sub)}
+.np .fork :is(b,strong){display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:22px;color:var(--ink);margin-bottom:4px}
+.np .tip{margin-top:22px;font-size:13px;color:var(--sub);padding-top:16px;border-top:1px solid var(--rule)}
+/* existing-kept marker */
+.np .keep{border:1.5px dashed var(--rule);border-radius:20px;padding:26px;text-align:center;color:var(--mute);font-size:13.5px;line-height:1.7}
+.np .keep :is(b,strong){display:block;color:var(--ink);font-size:14.5px;margin-bottom:4px}
+/* statement + models */
+.np .st.sm{display:grid;grid-template-columns:128px 1fr 128px;gap:26px;align-items:center;padding-left:clamp(20px,4vw,40px);padding-right:clamp(20px,4vw,40px)}
+.np .st.sm .big{font-size:clamp(20px,2.7vw,23.5px);letter-spacing:-.03em}
+.np .st.sm .pf{border-radius:16px;overflow:hidden;aspect-ratio:4/5}
+.np .st.sm .pf img{height:100%!important;object-fit:cover}
+.np .st.sm .pf.l{transform:translateY(-26px)}.np .st.sm .pf.r{transform:translateY(26px)}
+/* end */
+.np .end{position:relative;border-radius:22px;overflow:hidden;margin:clamp(80px,12vw,120px) clamp(20px,5vw,48px) 0}
+.np .end img{aspect-ratio:16/9;object-fit:cover}
+.np .end .t{position:absolute;left:0;right:0;top:46.2%;display:flex;flex-direction:column;align-items:center;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.np .end .t :is(b,strong){font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,6vw,58px);margin-top:-.45em}
+.np .end .t span{font-size:clamp(15px,1.9vw,16.5px);font-weight:600;letter-spacing:.02em;margin-top:8px;text-shadow:0 1px 3px rgba(0,0,0,.45),0 2px 16px rgba(0,0,0,.55)}
+.np .tail{height:clamp(60px,9vw,90px)}
+@media(max-width:760px){.np .tile .t3{font-size:25px}
+.np .hero{grid-template-columns:1fr;padding:22px 22px 34px;gap:28px}.np .hero .md{order:-1;max-width:none;justify-self:stretch}.np .hero .md .vw{aspect-ratio:4/5!important}.np .hero .h1{font-size:46px}.np .hero .kr{font-size:15.5px}.np .hero .spec{margin-top:30px;gap:20px 16px}.np .hero .spec span{font-size:16px}
+.np .ts,.np .fx .it,.np .tx2,.np .fork{grid-template-columns:1fr}.np .fx .it .m{order:0!important}
+.np .qa .row{grid-template-columns:1fr 1.3fr;column-gap:14px}.np .qa .q,.np .qa .a{font-size:13px;line-height:1.65;padding:16px 2px}.np .qa .row.hd>div{font-size:10px;letter-spacing:.18em;padding:0 2px 10px}
+.np .tl{grid-template-columns:1fr;gap:22px}.np .tl:before{left:7px;right:auto;top:7px;bottom:7px;width:1px;height:auto}
+.np .st.sm{grid-template-columns:1fr 1fr;gap:12px;row-gap:0;padding-left:22px;padding-right:22px}.np .st.sm .big{grid-column:1/-1;order:-1;font-size:20px}
+.np .st.sm .pf{width:112px;margin-top:30px;transform:none!important;border-radius:14px}.np .st.sm .pf.l{justify-self:end}.np .st.sm .pf.r{justify-self:start}
+.np .tl .s{padding-left:30px;padding-right:0}.np .tl .s:before{position:absolute;left:0;top:0}.np .tl .s i,.np .tl .s em{margin-top:-4px}}
+.np.s{--bg:#F6F8FA;--tone:#D3DFE9;--ink:#142B38;--sub:#3E5260;--mute:#7A8A96;--acc:#2F5A73;--acc2:#2F5A73;--hl:#D3DFE9;--line:#DCE4EA;--rule:rgba(20,43,56,.2);--card:#fff;--pill:#D3DFE9;--box:#E8EEF3}
+.np .shd{display:flex;align-items:flex-end;gap:16px}
+.np .shd .num{font-variant-numeric:lining-nums;font-feature-settings:'lnum' 1;font-family:'Cormorant Garamond',serif;font-size:clamp(80px,12vw,110px);line-height:.8;color:var(--line)}
+.np .shd p{font-size:13.5px;color:var(--sub);margin-top:6px}.np .shd p.h2s{font-size:clamp(34px,5vw,48px);color:var(--ink);margin:0}
+.np .tc{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.np .tc .cd{background:var(--card);border-radius:22px;padding:22px;display:flex;flex-direction:column}
+.np .tc .cd img{border-radius:14px}
+.np .tc .cap{font-size:13px;line-height:1.7;color:var(--sub);margin-top:14px;flex:1}
+.np .wide{margin-top:28px}.np .wide img{border-radius:18px}
+.np .pk{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,4vw,40px);align-items:center;margin-top:clamp(40px,6vw,56px)}
+.np .pk .lb{font:600 10.5px Pretendard;letter-spacing:.24em;color:var(--mute)}
+.np .pk .t3,.np .pk1 .t3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(28px,3.6vw,34px);margin:10px 0 4px;line-height:1.1}
+.np .pk .k,.np .pk1 .k{font-size:14px;font-weight:600;color:var(--acc2)}
+.np .pk .d,.np .pk1 .d{font-size:14.5px;line-height:1.8;color:var(--sub);margin-top:12px}
+.np .pk img{border-radius:18px}
+.np .pk1{margin-top:clamp(40px,6vw,56px)}.np .pk1 .lb{font:600 10.5px Pretendard;letter-spacing:.24em;color:var(--mute)}
+.np .rc{background:var(--box);border-radius:24px;padding:clamp(24px,4vw,36px);margin-top:20px;text-align:center}
+.np .rc .h{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(28px,4vw,36px)}
+.np .rc .s{font-size:13.5px;line-height:1.7;color:var(--sub);margin-top:6px}
+.np .rc .kw{display:flex;justify-content:center;gap:clamp(18px,5vw,48px);margin:20px 0 18px}
+.np .rc .kw b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:22px;color:var(--ink)}
+.np .rc .kw span{font-size:12px;color:var(--mute)}
+.np .rc img{border-radius:16px}
+.np .rc .cp{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.np .rc .cp i{display:block;font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--ink)}
+.np .rc .cp span{font-size:11.5px;color:var(--mute);line-height:1.5}
+.np .cert{display:flex;align-items:center;justify-content:center;gap:28px;margin-top:20px;background:var(--card);border-radius:20px;padding:22px}
+.np .cert .it{display:flex;align-items:center;gap:12px}
+.np .cert .it img{width:auto!important;height:46px!important}
+.np .cert b{display:block;font-size:13.5px}.np .cert small{font-size:11.5px;color:var(--mute)}
+.np .cert .sep{width:1px;height:40px;background:var(--line)}
+@media(max-width:760px){.np .tc,.np .pk{grid-template-columns:1fr}.np .cert{flex-direction:column;gap:16px;align-items:flex-start}.np .cert .sep{display:none}}
+</style><div class="np s">
+<div class="hero"><div class="tx"><div><p class="eb">UV Shield Essence</p><p class="h1">SPF50<sup style="font-size:.45em">+</sup><br><em>PA++++</em></p><p class="kr">제주의 강한 자외선을 견디며 자란 원료로,<br>가볍고 투명하게 스며드는 선 에센스.</p></div><div class="spec"><div><b>VOLUME</b><span>50ml</span></div><div><b>UV</b><span>SPF50+ · PA++++</span></div><div><b>FUNCTION</b><span>자외선 차단·미백·주름개선</span></div><div><b>FORMULA</b><span>Vegan</span></div></div></div><div class="md"><div class="vw" style="aspect-ratio:536/868"><video autoplay loop muted playsinline preload="metadata" src="https://raw.githubusercontent.com/studionue/studionue-videos/main/pdp/v7/sunscreen_solo.mp4"></video></div></div></div>
+<div class="st sm"><div class="pf l"><img src="https://raw.githubusercontent.com/studionue/studionue-videos/main/pdp/models/model_s_w.jpg" alt=""></div><p class="big">매일 바르는 선크림이기에,<br><em>가볍고 투명한 마무리</em>와 <em>든든한 차단</em>을<br>함께 담았습니다.</p><div class="pf r"><img src="https://raw.githubusercontent.com/studionue/studionue-videos/main/pdp/models/model_s_m.jpg" alt=""></div></div>
+<div class="sec pad qa"><p class="eb">For You · Why Studio Nue</p><p class="h2">이런 분들께 추천해요</p><p class="lead">매일 바르는 선크림이기에, 이런 고민부터 덜어내고 싶었습니다.</p><div class="rows"><div class="row hd"><div class="q">BEFORE</div><div class="a">STUDIO NUE</div></div><div class="row"><div class="q"><span class="tp">백탁</span>바르면 얼굴이 하얗게 떠요.</div><div class="a">투명하게 마무리되어, 바른 티 없이 자연스러워요.</div></div><div class="row"><div class="q"><span class="tp">끈적임</span>번들거리고 끈적여서 손이 안 가요.</div><div class="a">에센스 제형이라 가볍게 스며들고 산뜻하게 마무리돼요.</div></div><div class="row"><div class="q"><span class="tp">밀림</span>바른 뒤에 메이크업이나 다음 단계가 밀려요.</div><div class="a">밀림·뭉침 없이 메이크업 베이스로도, 그대로 외출해도 편안해요.</div></div><div class="row"><div class="q"><span class="tp">기능</span>자외선 차단만으로는 아쉬워요.</div><div class="a">SPF50+, PA++++에 미백·주름개선까지, 3중 기능성을 담았어요.</div></div></div><div class="more"><p>이런 분께도 추천해요</p><div class="pills"><span>테스트로 검증된 안심</span><span>친환경 패키지</span><span>비건</span></div></div></div>
+<div class="sec pad"><p class="eb">Texture</p><p class="h2">매일 바르고 싶은 가벼움</p><div class="ts"><div class="tile"><p class="eb">Texture</p><p class="t3">Light as essence</p><p class="k">가볍게, 투명하게</p><p>부드럽고 가볍게 발리고 투명하게 마무리됩니다.</p><div class="meter"><div><span>가벼움</span><span>리치함</span></div><div class="bar"><i style="width:22%"></i></div><div><span>보송함</span><span>촉촉함</span></div><div class="bar"><i style="width:58%"></i></div></div><span class="nt">※ 사용감 그래프는 이해를 돕기 위한 표현입니다.</span></div><div class="tile"><p class="eb">Protection</p><p class="t3">Strong, every day</p><p class="k">SPF50+ · PA++++</p><p>자외선 차단에 미백·주름개선까지 3중 기능성으로 매일의 피부를 지킵니다.</p><div class="pills"><span>SPF50+</span><span>PA++++</span><span>3중 기능성</span></div></div></div></div>
+<div class="sec pad fx"><div class="hd"><span class="num">01</span><div><p class="h2s">The Formula</p><p>스튜디오뉴의 모든 제품은 이 세 가지 기준을 통과한 처방으로 만들어집니다.</p></div></div><div class="it"><div class="m"><div class="crop"><img src="https://studionue.co.kr/web/upload/NNEditor/20261102/nv11_sun_vegan.jpg" alt=""></div></div><div><p class="lb">FORMULA 01</p><p class="t3">Honest Vegan</p><p class="k">정직하게 선별한 비건 원료</p><p class="d">제주 특허 원료 Jeju Active Complex를 비롯해, 피부를 생각한 식물성 원료만을 골라 담았습니다.</p><div class="pl"><span>제주 병풀</span><span>판테놀</span><span>알란토인</span><span>제주 녹차</span></div></div></div><div class="it rv"><div class="m"><div class="vw" style="aspect-ratio:1238/742"><video autoplay loop muted playsinline preload="metadata" src="https://raw.githubusercontent.com/studionue/studionue-videos/main/pdp/v6/synergy_v2.mp4"></video></div></div><div><p class="lb">FORMULA 02</p><p class="t3">Plant Synergy</p><p class="k">식물성 원료의 시너지</p><p class="d">식물성 원료가 함께 작용해 자외선에 지친 피부를 진정시키고 촉촉하게 가꿉니다.</p><div class="pl"><span>Jeju Active Complex™</span></div></div></div><div class="it"><div class="m"><div class="vw" style="aspect-ratio:1238/742"><video autoplay loop muted playsinline preload="metadata" src="https://raw.githubusercontent.com/studionue/studionue-videos/main/pdp/v6/func_v2.mp4"></video></div></div><div><p class="lb">FORMULA 03</p><p class="t3">Functional Care</p><p class="k">미백 · 주름개선</p><p class="d">식약처 기능성 고시 원료인 아데노신(주름개선)과 나이아신아마이드(미백)를 담았습니다.</p><div class="pl"><span>아데노신</span><span>나이아신아마이드</span></div></div></div></div>
+<div class="sec pad"><div class="jac"><p class="eb">Patented Botanical</p><p class="h2s">Jeju Active Complex™</p><p class="lead">제주에서 자란 5가지 보태니컬 성분을 담은 스튜디오뉴의 특허 원료입니다.</p><div class="in"><img src="https://studionue.co.kr/web/upload/NNEditor/20261102/nv5_c_jac.jpg" alt=""></div><span class="nt">※ 원료적 특성에 한함</span><a class="lk">Jeju Active Complex 더 알아보기 →</a></div></div>
+<div class="sec pad tx2"><div><img src="https://studionue.co.kr/web/product/extra/big/202607/9aed9f9f5955307f4366a9313b9d6fef.png" alt="" style="aspect-ratio:1/1;object-fit:cover"></div><div><p class="eb">Finish</p><p class="h2">가볍게, 투명하게,<br>산뜻하게</p><p class="lead">부드럽고 가볍게 발리고 투명하게 마무리됩니다. 밀림·뭉침이 없어 다음 단계가 편안합니다.</p><div class="xp"><span>번들거림</span><span>끈적임</span><span>백탁</span><span>밀림·뭉침</span></div></div></div>
+<div class="sec pad"><div class="rt"><p class="eb">Daily Routine</p><p class="h2">스킨케어의 마지막 단계</p><div class="tl" style="--n:3"><div class="s"><i>Skincare</i><p>평소처럼 기초 케어를 마무리합니다.</p></div><div class="s on"><i>UV Shield Essence</i><p>외출 전 얼굴과 목까지 고르게 펴 바릅니다.</p></div><div class="s"><i>Next Step</i><p>메이크업도, 바로 외출도 자유롭게.</p></div></div><div class="fork"><p>STEP 3 · 나에게 맞는 다음 단계</p><div><b>Make-up</b>밀림·뭉침 없이 바로 메이크업 베이스로.</div><div><b>Ready to go</b>메이크업 없이도 번들거림 없이, 그대로 산뜻하게 외출.</div></div><p class="tip">Tip. 야외 활동이 길어지면 2~3시간마다 덧발라 주세요.</p></div></div>
+<div class="sec pad"><div class="shd"><span class="num">02</span><div><p class="h2s">Tested &amp; Clean</p><p>안전성 테스트 및 유해성분 배제</p></div></div><p class="lead">누구나 안심하고 사용할 수 있도록 3종 안전성 테스트를 완료했고, 처음 설계부터 12종 유해성분을 배제했습니다.</p><div class="tc"><div class="cd"><img src="https://studionue.co.kr/web/upload/NNEditor/20261102/nv5_c_safety.jpg" alt="3종 안전성 테스트"><p class="cap">OATC 피부임상시험센터 · 국가공인시험검사기관 시험 완료</p><a class="lk" href="/new/page11-01-r.html">시험성적서 자세히 보기 (3종 테스트) →</a></div><div class="cd"><img src="https://studionue.co.kr/web/upload/NNEditor/20261102/nv5_icon12.png" alt="12종 유해성분 제외"><p class="cap">※ 파라벤, 인공색소, 합성 산화방지제(BHA/BHT), 미네랄 오일, 트리클로산, 프탈레이트, 포름알데히드 방출 방부제, 합성 침투 촉진제(PEG 계열), 설페이트(SLS/SLES), 옥시벤존(벤조페논-3), 옥티녹세이트, 나노 산화아연·이산화티타늄</p><a class="lk" href="/new/page12-01-r.html">12종 유해성분 자세히 알아보기 →</a></div></div></div><div class="sec pad"><div class="shd"><span class="num">03</span><div><p class="h2s">Reef Safe</p><p>산호초 생태계 보호</p></div></div><p class="lead">바다 생태계에 부담을 주지 않도록, 산호초에 영향을 줄 수 있는 자외선 차단 성분 3종(에칠헥실메톡시신나메이트·벤조페논-3·부틸메톡시디벤조일메탄)을 넣지 않았습니다.</p><div class="wide"><img src="https://studionue.co.kr/web/upload/NNEditor/20261102/nv5_reef.jpg" alt="Reef Safe"></div></div><div class="sec pad"><div class="shd"><span class="num">04</span><div><p class="h2s">Sustainability</p><p>끝까지 남김없이</p></div></div><p class="lead">튜브부터 상자, 인쇄 잉크까지. 다 쓰고 난 뒤의 모습까지 생각해 패키지를 만들었습니다.</p><div class="pk"><div><img src="https://studionue.co.kr/web/upload/NNEditor/20261102/nv6_sun_tube.jpg" alt="단일 알루미늄 튜브"></div><div><p class="lb">PACKAGE 01</p><p class="t3">Single Aluminum Tube</p><p class="k">단일 알루미늄 튜브</p><p class="d">순도 높은 재활용을 위해 입구까지 단일 알루미늄으로 제작했습니다. 빛과 공기를 막아 내용물을 지키고, 필요한 양만 짜서 쓸 수 있습니다.</p><a class="lk" href="/new/page08-r.html">알루미늄 튜브를 선택한 이유 →</a></div></div><div class="pk1"><p class="lb">PACKAGE 02</p><p class="t3">Reusable Box</p><p class="k">재사용이 가능한 패키징</p><p class="d">2차 포장 박스는 리무버블 스티커를 떼어 필통이나 수납함으로 다시 쓸 수 있습니다. 합성수지나 코팅 없이 제작해 분리배출 시에는 종이류로 재활용됩니다.</p><div class="rc"><p class="h">Re Campaign</p><p class="s">다 쓴 패키지를 버리지 않고 다시 쓰는,<br>스튜디오뉴의 세 가지 제안</p><div class="kw"><div><b>ReNew</b><span>새롭게 꾸미고</span></div><div><b>ReDuce</b><span>쓰레기는 줄이고</span></div><div><b>ReUse</b><span>다시 쓰고</span></div></div><img src="https://studionue.co.kr/web/upload/NNEditor/20261102/nv6_box_cards.jpg" alt="재사용 가능한 패키징"><div class="cp"><p><i>In the Kitchen</i><span>차와 간식을 담는 캐니스터</span></p><p><i>On the Desk</i><span>펜과 연필을 꽂는 홀더</span></p><p><i>Make it Yours</i><span>취향대로 꾸미는 소품함</span></p></div></div></div><div class="pk1"><p class="lb">PACKAGE 03</p><p class="t3">FSC Paper &amp; Soy Ink</p><p class="k">FSC 인증 종이 + Soy Ink</p><p class="d">지속 가능하게 관리된 산림에서 생산한 FSC 인증 종이와, 석유계 잉크보다 유해물질이 적은 대두 기반 Soy Ink로 인쇄했습니다.</p><div class="cert"><div class="it"><img src="https://studionue.co.kr/web/upload/NNEditor/20261102/nv5_logo_fsc.png" alt="FSC"><p><b>FSC 인증 종이</b><small>FSC™ A000543 · ~2031.01</small></p></div><span class="sep"></span><div class="it"><img src="https://studionue.co.kr/web/upload/NNEditor/20261102/nv5_logo_soy.png" alt="American Soybean Association"><p><b>Soy Ink 인쇄</b><small>ASA SoySeal License</small></p></div></div></div></div>
+<div class="end"><img src="https://studionue.co.kr/About%20Us/renewal/about_hero_v2.jpg" alt=""><div class="t"><b>Studio Nue.</b><span>제주에서, 꼭 필요한 것만</span></div></div><div class="tail"></div>
+</div>
+<style>
+	.sn-notice {
+		font-family: 'Noto Sans KR', -apple-system, sans-serif; max-width: 860px; margin: 0 auto; color: #1a1a1a;
+	}
+	/* 섹션 타이틀 */
+	
+	.sn-section-title {
+		font-size: 14px; font-weight: 700; color: #3a5a40; letter-spacing: 0.1em; text-align: center; padding: 6px 24px; margin: 24px auto 18px; display: table; background-color: #e8f5f0; border-radius: 50px;
+	}
+	/* 전성분 영역 */
+	
+	.sn-ing-area {
+		padding: 0 0 12px; border-bottom: 1px solid #e8e8e8;
+	}
+	
+	.sn-ing-label {
+		font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: #5a7a6a; margin-bottom: 12px; padding-left: 8px;
+	}
+	/* 범례 */
+	
+	.sn-legend {
+		display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 12px 16px; background: #f8f8f6; border-radius: 6px 6px 0 0; border: 1px solid #d8d8d0; border-bottom: none;
+	}
+	
+	.sn-li {
+		display: flex; align-items: center; gap: 6px; font-size: 13px; color: #555; white-space: nowrap;
+	}
+	
+	.sn-dot {
+		width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+	}
+	
+	.sn-jeju-swatch {
+		width: 24px; height: 11px; background: #fff0e0; border: 0.5px solid #e8b87a; border-radius: 2px; flex-shrink: 0;
+	}
+	
+	.sn-div {
+		width: 0.5px; height: 14px; background: #c8c8c0; align-self: center;
+	}
+	/* 전성분 박스 */
+	
+	.sn-ing-box {
+		padding: 18px 20px; border: 1px solid #d8d8d0; border-radius: 0 0 6px 6px; background: #ffffff; line-height: 2.2; font-size: 13px; color: #5a5a5a;
+	}
+	/* 카테고리 색상 */
+	
+	.ci-moist {
+		color: #1155CC; font-weight: 500;
+	}
+	
+	.ci-barrier {
+		color: #1a7a34; font-weight: 500;
+	}
+	
+	.ci-white {
+		color: #c00000; font-weight: 500;
+	}
+	
+	.ci-wrinkle {
+		color: #7B3F00; font-weight: 500;
+	}
+	
+	.ci-uv {
+		color: #6600cc; font-weight: 500;
+	}
+	
+	.ci-sooth {
+		color: #006666; font-weight: 500;
+	}
+	
+	.ci-base {
+		color: #5a5a5a;
+	}
+	
+	.jeju {
+		background-color: #fff0e0; border-radius: 3px; padding: 1px 5px 1px 4px;
+	}
+	
+	.sep {
+		color: #cccccc; margin: 0 1px;
+	}
+	/* 정보 테이블 */
+	
+	.sn-table {
+		width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; border: 1px solid #d8d8d0; border-radius: 6px; overflow: hidden;
+	}
+	
+	.sn-table th,
+	.sn-table td {
+		padding: 13px 15px; border: none; border-bottom: 1px solid #d8d8d0; vertical-align: top; font-size: 12.5px; font-weight: 400; line-height: 1.7; text-align: left; word-break: keep-all;
+	}
+	
+	.sn-table tr:last-child th,
+	.sn-table tr:last-child td {
+		border-bottom: none;
+	}
+	
+	.sn-table th {
+		background: #f6f7f9; color: #555; width: 31%; border-right: 1px solid #d8d8d0;
+	}
+	
+	.sn-table td {
+		color: #1a1a1a;
+	}
+	
+	.sn-ing-guide {
+		font-size: 11px; color: #888; letter-spacing: 0.03em; margin-top: 2px; margin-bottom: 2; padding-left: 2px;
+	}
+
+</style>
+
+
+<div class="sn-notice">
+
+<p class="sn-section-title">상품정보 제공고시</p>
+
+<div class="sn-ing-area">
+
+<p class="sn-ing-label">화장품법에 따라 기재해야 하는 모든 성분</p>
+<div class="sn-legend">
+<div class="sn-li"><span style="background:#1155CC;" class="sn-dot"></span>수분·보습</div>
+<div class="sn-li"><span style="background:#1a7a34;" class="sn-dot"></span>피부장벽·에몰리언트</div>
+<div class="sn-li"><span style="background:#c00000;" class="sn-dot"></span>미백</div>
+<div class="sn-li"><span style="background:#7B3F00;" class="sn-dot"></span>주름개선</div>
+<div class="sn-li"><span style="background:#6600cc;" class="sn-dot"></span>자외선 차단</div>
+<div class="sn-li"><span style="background:#006666;" class="sn-dot"></span>진정·항산화</div>
+<div class="sn-li"><span style="background:#5a5a5a;" class="sn-dot"></span>기제·기타</div>
+<div class="sn-div"></div>
+<div class="sn-li"><span class="sn-jeju-swatch"></span>제주 원료</div>
+</div>
+<div class="sn-ing-box">
+<span class="ci-base">정제수</span><span class="sep">, </span><span class="ci-barrier">다이부틸아디페이트</span><span class="sep">, </span><span class="ci-moist">2,3-부탄다이올</span><span class="sep">, </span><span class="ci-uv">에칠헥실트리아존</span><span class="sep">, </span><span class="ci-uv">디에칠아미노하이드록시벤조일헥실벤조에이트</span><span class="sep">, </span><span class="ci-white">나이아신아마이드</span><span class="sep">, </span><span class="ci-uv">드로메트리졸트리실록산</span><span class="sep">, </span><span class="ci-uv">테레프탈릴리덴디캠퍼설포닉애씨드</span><span class="sep">, </span><span class="ci-moist">1,2-헥산다이올</span><span class="sep">, </span><span class="ci-barrier">다이아이소프로필세바케이트</span><span class="sep">, </span><span class="ci-barrier">카프릴릴메티콘</span><span class="sep">, </span><span class="ci-barrier">베헤닐알코올</span><span class="sep">, </span><span class="ci-barrier">아라키딜알코올</span><span class="sep">, </span><span class="ci-uv">디에칠헥실부타미도트리아존</span><span class="sep">, </span><span class="ci-barrier">비닐다이메티콘</span><span class="sep">, </span><span class="ci-base">트라이메틸펜탄다이올/아디픽애씨드/글리세린크로스폴리머</span><span class="sep">, </span><span class="ci-sooth jeju">녹차수</span><span class="sep">, </span><span class="ci-moist">판테놀</span><span class="sep">, </span><span class="ci-wrinkle">아데노신</span><span class="sep">, </span><span class="ci-sooth jeju">자주천인국추출물</span><span class="sep">, </span><span class="ci-moist jeju">조씨추출물</span><span class="sep">, </span><span class="ci-sooth jeju">알로에베라잎추출물</span><span class="sep">, </span><span class="ci-sooth jeju">녹차추출물</span><span class="sep">, </span><span class="ci-moist jeju">코치닐선인장열매추출물</span><span class="sep">, </span><span class="ci-sooth jeju">병풀추출물</span><span class="sep">, </span><span class="ci-white jeju">쌀추출물</span><span class="sep">, </span><span class="ci-sooth">알란토인</span><span class="sep">, </span><span class="ci-base">트로메타민</span><span class="sep">, </span><span class="ci-base">아이소도데케인</span><span class="sep">, </span><span class="ci-barrier">트라이메틸실록시실리케이트</span><span class="sep">, </span><span class="ci-barrier">아라키딜글루코사이드</span><span class="sep">, </span><span class="ci-barrier">세테아릴알코올</span><span class="sep">, </span><span class="ci-base">폴리아크릴레이트크로스폴리머-6</span><span class="sep">, </span><span class="ci-barrier">소듐스테아로일글루타메이트</span><span class="sep">, </span><span class="ci-base">소듐폴리아크릴로일다이메틸타우레이트</span><span class="sep">, </span><span class="ci-barrier">C30-45알킬세테아릴다이메티콘크로스폴리머</span><span class="sep">, </span><span class="ci-barrier">스테아릴알코올</span><span class="sep">, </span><span class="ci-base">향료</span><span class="sep">, </span><span class="ci-base">페녹시에탄올</span><span class="sep">, </span><span class="ci-barrier">비닐다이메티콘/메티콘실세스퀴옥세인크로스폴리머</span><span class="sep">, </span><span class="ci-base">에틸헥실글리세린</span>
+<br>
+
+<p class="sn-ing-guide">※ 각 성분별 기능을 카테고리별로 확인해보세요.</p>
+</div>
+</div>
+
+<table class="sn-table"><tbody><tr><th>내용물의 용량 또는 중량</th>
+<td>50ml</td></tr>
+<tr><th>제품 주요 사양</th>
+<td>모든 피부 타입</td></tr>
+<tr><th>사용기한(또는 개봉 후 사용기간)</th>
+<td>제조일로부터 36개월, 개봉 후 12개월</td></tr>
+<tr><th>사용방법</th>
+<td>스킨케어의 마지막 단계에서 얼굴과 목에 적당량을 덜어 부드럽게 펴 발라 흡수시켜 주세요.</td></tr>
+<tr><th>화장품제조업자, 화장품책임판매업자 및 맞춤형화장품판매업자</th>
+<td>화장품책임판매업자 : 스튜디오뉴 유한회사 / 화장품제조업자 : 유씨엘(주)</td></tr>
+<tr><th>제조국</th>
+<td>대한민국</td></tr>
+<tr><th>기능성 화장품 식품의약품안전처 심사필 여부</th>
+<td>화장품법에 따른 기능성 화장품 심사(또는 보고)를 필함</td></tr>
+<tr><th>사용할 때의 주의사항</th>
+<td>1) 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우에는 전문의 등과 상담할 것 2) 상처가 있는 부위 등에는 사용을 자제할 것 3) 보관 및 취급 시의 주의사항 가) 어린이의 손이 닿지 않는 곳에 보관할 것 나) 직사광선을 피해서 보관할 것</td></tr>
+<tr><th>품질보증기준</th>
+<td>본 제품에 이상이 있을 경우 공정거래위원회 고시 '소비자 분쟁 해결 기준'에 의거 보상해 드립니다.</td></tr></tbody></table>
+
+</div>
