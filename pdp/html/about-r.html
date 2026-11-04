@@ -19,7 +19,7 @@
 .nab .hero h1{font:500 clamp(48px,6.4vw,92px)/.98 var(--cg)!important;margin:14px 0 0;color:var(--ink)}
 .nab .hero h1 i{font-style:italic;color:var(--acc)}
 .nab .hero .hp{font:400 15px/1.9 var(--pr);color:var(--sub);margin:0;max-width:420px;justify-self:end}
-.nab .hero .hi{border-radius:20px;overflow:hidden;aspect-ratio:2/1;background:var(--tone);width:76%;margin-left:auto}
+.nab .hero .hi{border-radius:20px;overflow:hidden;aspect-ratio:2/1;background:var(--tone);width:76%;margin:0 auto}
 .nab .hero .hi img,.nab .hero .hi video{display:block;width:100%;height:100%;object-fit:cover}
 .nab .toc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:36px;margin:30px 0 0;border-top:1px solid var(--rule,rgba(38,46,38,.18))}
 .nab .toc a{display:flex;align-items:baseline;gap:16px;padding:18px 2px 17px;border-bottom:1px solid rgba(38,46,38,.18);color:var(--ink)}
@@ -69,7 +69,7 @@
 .nab .sd .lks .lk{margin-top:0}
 .nab .sd .lk2{font:500 12px/1.4 var(--pr);color:var(--mute);border-bottom:1px solid var(--line);padding-bottom:2px}
 .nab .sd .lk2:hover{color:var(--ink)}
-.nab .sd .sp{aspect-ratio:1/1;background:var(--tone);overflow:hidden}
+.nab .sd .sp{aspect-ratio:1/1;max-height:240px;background:var(--tone);overflow:hidden}
 .nab .sd .sp img,.nab .sd .sp video{display:block;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .nab .sd:hover .sp video{transform:scale(1.04)}
 .nab .sd:hover .sp img{transform:scale(1.04)}
@@ -77,18 +77,18 @@
 .nab .sd .sp.tx b{font:500 clamp(54px,5.6vw,80px)/.9 var(--cg);text-align:center}
 .nab .sd .sp.tx b small{display:block;font:600 11px/1 var(--pr);letter-spacing:.2em;margin-top:14px;color:rgba(255,255,255,.7)}
 .nab .sd .sp.jac{background:#fff;display:flex;align-items:center;justify-content:center}
-.nab .sd .sp.jac img{width:74%;height:auto;object-fit:contain}
+.nab .sd .sp.jac img{width:74%;height:auto;max-height:84%;object-fit:contain}
 .nab .sd .sp.stamp{background:#fff;display:flex;align-items:center;justify-content:center}
 .nab .sd .sp.badge{background:#fff;display:flex;align-items:center;justify-content:center}
-.nab .sd .sp.badge img{width:66%;height:auto;object-fit:contain}
+.nab .sd .sp.badge img{width:66%;height:auto;max-height:84%;object-fit:contain}
 .nab .sd:hover .sp.badge img{transform:scale(1.04)}
 .nab .sd .sp.tx.vg{background:#fff}
 .nab .sd .sp.vg small{color:#29604C!important}
-.nab .sd .sp.stamp img{width:70%;height:auto;object-fit:contain}
+.nab .sd .sp.stamp img{width:70%;height:auto;max-height:84%;object-fit:contain}
 .nab .sd:hover .sp.stamp img{transform:scale(1.04)}
 .nab .sd:hover .sp.jac img{transform:scale(1.05)}
 .nab .sd .sp.vg{flex-direction:column;gap:18px}
-.nab .sd .sp.vg img{width:66%;height:auto;object-fit:contain}
+.nab .sd .sp.vg img{width:66%;max-width:220px;height:auto;object-fit:contain}
 .nab .sd .sp.vg small{font:600 11px/1 var(--pr);letter-spacing:.2em;color:rgba(255,255,255,.7)}
 .nab .sd .sp.num b{font:200 clamp(52px,5.2vw,76px)/1 var(--pr)!important;letter-spacing:-.02em;font-variant-numeric:lining-nums tabular-nums}
 .nab .sd .sp.num b small{font-weight:600!important;letter-spacing:.2em!important}
@@ -108,7 +108,7 @@
 .nab .fd p{font:400 14.5px/1.9 var(--pr);color:rgba(255,255,255,.78);margin:0}
 .nab .fd .sig{margin-top:26px;font:italic 500 20px/1 var(--cg);color:rgba(255,255,255,.9)}
 /* collection */
-.nab .col{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.nab .col{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .nab .pc{display:block;background:#fff;border-radius:20px;overflow:hidden;transition:box-shadow .3s}
 .nab .pc:hover{box-shadow:0 10px 30px rgba(38,46,38,.08)}
 .nab .pc .pi{aspect-ratio:1/1;background:var(--tone);overflow:hidden}
@@ -174,7 +174,6 @@
 .nab .fd p{font-size:13.5px}
 .nab .col{grid-template-columns:repeat(2,1fr);gap:10px}
 .nab .pc{border-radius:16px}
-.nab .pc:first-child{grid-column:1/-1}
 .nab .pc .pb{padding:16px 14px 18px}
 .nab .pc h4{font-size:22px!important}
 .nab .pc p{font-size:12px;line-height:1.6}
@@ -243,11 +242,12 @@
 </div></section>
 
 <section class="sec" id="collection"><div class="w">
-<div class="shd"><span class="num">06</span><div><h2>The Collection</h2><p>꼭 필요한 세 가지로 시작합니다</p></div></div>
+<div class="shd"><span class="num">06</span><div><h2>The Collection</h2><p>꼭 필요한 것만, 끝까지 쓰도록</p></div></div>
 <div class="col">
 <a class="pc" href="/product/detail.html?product_no=52"><div class="pi"><img src="/web/product/big/202610/b746cd4b30a00abe2bf7edccb72694d8.jpg" alt="핸드 컴포트 크림" loading="lazy"></div><div class="pb"><span class="pt">HAND CREAM</span><h4>Hand Comfort Cream</h4><p class="pk">핸드 컴포트 크림</p><p>제주 그린 시트러스 향의 순한 손 보습크림.</p><span class="lk">제품 보기 →</span></div></a>
 <a class="pc" href="/product/detail.html?product_no=53"><div class="pi"><img src="/web/product/big/202610/ce830a239633ebcffb4a6997e56bf4a6.png" alt="유브이 쉴드 에센스" loading="lazy"></div><div class="pb"><span class="pt">SUNSCREEN</span><h4>UV Shield Essence</h4><p class="pk">유브이 쉴드 에센스</p><p>얇고 산뜻한 에센스 타입 선크림.</p><span class="lk">제품 보기 →</span></div></a>
 <a class="pc" href="/product/detail.html?product_no=51"><div class="pi"><img src="/web/product/big/202610/746d851ab7658e2a486c17bad4df2210.png" alt="페이셜 딥 클렌저" loading="lazy"></div><div class="pb"><span class="pt">FACIAL CLEANSER</span><h4>Facial Deep Cleanser</h4><p class="pk">페이셜 딥 클렌저</p><p>제주 성분으로 만든 저자극 클렌저.</p><span class="lk">제품 보기 →</span></div></a>
+<a class="pc" href="/product/detail.html?product_no=54"><div class="pi"><img src="/web/product/big/202607/74daab741e142c0db84d05683f767522.jpg" alt="스퀴저 + 틴케이스 키트" loading="lazy"></div><div class="pb"><span class="pt">ACCESSORY</span><h4>Squeezer + Tin Case Kit</h4><p class="pk">스퀴저 + 틴케이스 키트</p><p>튜브 속 마지막 한 방울까지 쓰는 키트.</p><span class="lk">제품 보기 →</span></div></a>
 </div>
 </div></section>
 
